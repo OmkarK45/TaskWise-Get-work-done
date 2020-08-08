@@ -1,0 +1,48 @@
+<%- include('partials/header') %>
+
+<section class="login">
+   
+        <div class="wrapper">
+            <div class="box-left">
+             <img src="/img/person-working.png" alt="">
+            </div>
+            <div class="box-right ">
+                <div class="box box-blue">
+                    <p>
+                     <strong>Welcome Back.
+                    </p>
+                </div>
+                <!-- FORM -->
+                <%- include('partials/notification')  %> 
+                <form action="/user/login" method="POST" class="box" id="form">
+                  <div class="form-control">
+                      <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Email Address">
+                    <small></small>
+                  </div>
+                  <div class="form-control">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Password">
+                    <small></small>
+                  </div>
+          
+                  <button class="btn-green" id="submit" type="submit">Login
+                  </button>
+                  <small>
+                    By clicking the button, you are agreeing to our 
+                    <a href="">
+                      Terms and Services
+                    </a>
+                  </small>
+                  <small>
+                    Don't have an account ?
+                    <a href="">
+                      Create one.
+                    </a>
+                  </small>
+                </form>
+              </div>
+            </div>
+    
+</section>
+<%- include('partials/footer') %>

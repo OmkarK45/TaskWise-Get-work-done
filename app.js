@@ -1,0 +1,69 @@
+const express = require("express");
+const mongoose = require("mongoose");
+const bodyParser = require('body-parser');
+const flash = require('connect-flash');
+const session = require('express-session');
+const cors = require('cors');
+const app = express();
+const bcrypt = require('bcryptjs');
+const User = require('./models/User');
+const postRoute = require('./routes/posts');
+const authRoute = require('./routes/login');
+const dashboardRoute = require('./routes/dashboard');
+const passport = require("passport");
+require('dotenv/config')
+
+require('./passport-config')(passport);
+// Use and Set App dependencies
+app.use(cors());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }, { useUnifiedTopology: true }));
+app.set('view engine', 'ejs');
+app.use(express.static(__dirname + '/public'));
+app.set('views', __dirname + '/views');
+
+// Express Session Middleware
+app.use(session({
+  secret: 'oscar',
+  resave: true,
+  saveUninitialized: true
+}))
+//Passport middleware
+app.use(passport.initialize());
+app.use(passport.session());
+
+// Connect Flash
+app.use(flash());
+
+// Global vars
+app.use((req,res,next)=>{
+  res.locals.success_msg = req.flash('success_msg');
+  res.locals.error_msg = req.flash('error_msg');
+  res.locals.error = req.flash('error');
+  next();
+})
+// Middlewares (Function that execute when routes are hit)
+app.use('/posts', postRoute);
+app.use('/user',authRoute);
+app.use('/dashboard',dashboardRoute);
+// Connect to DB
+mongoose.connect(
+    process.env.DB_CONNECTION,
+  { useNewUrlParser: true, useUnifiedTopology: true ,useCreateIndex:true},
+  () => {
+    console.log("Connected to DB");
+  }
+);
+
+// Home Page
+app.get("/", (req, res) => {
+    res.render('landing');
+});
+  
+
+
+// Start the server
+const PORT = process.env.PORT || 3000;
+app.listen(3000, () => {
+  console.log(`Server started on ${PORT}`);
+});

@@ -1,0 +1,72 @@
+header{
+    padding: 2rem 4rem;
+    margin: 0 auto;
+    height: 8vh;
+    
+}
+nav{
+    font-family: var(--headingFont);
+    color: var(--neutraldark);
+    font-weight: 500;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ul{
+        display: flex;
+        align-items: center;
+        li{
+            font-size: 1.1rem;
+            cursor: pointer;
+            margin: 0 2rem;
+            list-style: none;
+        }
+    }
+}
+.logo{
+    color: black;
+   font-family: inherit;
+}
+.btnYellow{
+    background-color: var(--yellow);
+    padding: 0.8rem 1.6rem;
+    border-radius: 10px;
+    color: var(--neutraldark);
+}
+.main{
+    background-image: url('../../img/Waimakariri.svg');
+}
+.hero{
+    height: 100vh;
+    // background-color: lightgreen;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1{
+        font-family: 'Product Sans',sans-serif;
+        font-weight: 900;
+        font-size: 5rem;
+        color: var(--neutraldark);
+        margin-top: -5rem;
+        margin-bottom: 2.5rem;
+    }
+    p{
+        margin-bottom: 2.5rem;
+
+    }
+}
+
+.btn-dark{
+    background-color: var(--darkBlue);
+    color: var(--lightGrey);
+    margin-right:2rem ;
+}
+.btn-light{
+    background-color: var();
+}
+.btn-wrapper{
+    display: flex;
+}
