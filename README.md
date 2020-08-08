@@ -8,4 +8,14 @@ Simply clone and open in your favorite editor and type <code> npm install </code
 - Frontend form validation doesn't display alerts properly. 
 - Might contain unused node_modules. 
 
+# Screenshots
+
+
+
 # Feel free to put a pull request if any bug is found :)
+<div align="center">
+    <img src="https://i.imgur.com/EM03nHW.png">
+      <img src="https://i.imgur.com/5tEaBDl.png">
+    <img src="https://i.imgur.com/hqL9YuX.png">
+
+</div>
