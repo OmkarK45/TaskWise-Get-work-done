@@ -40,7 +40,7 @@ router.post('/',ensureAuthenticated,async (req,res)=>{
 });
 
 // Specific post
-router.get('/:postId', async (req,res)=>{
+router.get('/:postId', ensureAuthenticated,async (req,res)=>{
     try{
         const post = await Post.findById(req.params.postId);
         res.json(post);
@@ -51,7 +51,7 @@ router.get('/:postId', async (req,res)=>{
 });
 
 // Route for searching particular task
-router.post('/search/:query', async(req,res)=>{
+router.post('/search/:query', ensureAuthenticated,async(req,res)=>{
     try{
         const post = await Post.find({title:req.params.query})
         res.json(post);
@@ -64,7 +64,7 @@ router.post('/search/:query', async(req,res)=>{
 
 
 // Delete a specific post
-router.delete('/:postId', async (req,res)=>{
+router.delete('/:postId', ensureAuthenticated,async (req,res)=>{
     try{
         const removedPost = await Post.deleteOne({_id:req.params.postId});
     }
@@ -74,7 +74,7 @@ router.delete('/:postId', async (req,res)=>{
 });
 
 // Update a post
-router.patch('/:postId',async (req,res)=>{
+router.patch('/:postId',ensureAuthenticated,async (req,res)=>{
     try{
        const updatedPost = await Post.updateOne({_id:req.params.postId},{$set:{title:req.body.title}}
         );
