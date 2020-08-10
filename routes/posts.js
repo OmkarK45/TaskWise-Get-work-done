@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const Post = require('../models/Post');
 const User = require('../models/User');
+const Joi = require('@hapi/joi');
 
 // Gets all the posts
 router.get("/", async (req, res) => {
@@ -17,7 +18,7 @@ router.get("/", async (req, res) => {
 });
 
 // Submits a post
-router.post('/', async (req,res)=>{
+router.post('/',async (req,res)=>{
     const post = new Post({
         title:req.body.title,
         description:req.body.description,
@@ -30,6 +31,7 @@ router.post('/', async (req,res)=>{
    catch(err){
     res.json({message:err})
    }
+      
 });
 
 // Specific post
@@ -64,4 +66,6 @@ router.patch('/:postId',async (req,res)=>{
         res.json({message:err});
     }
 })
+
+
 module.exports = router;
