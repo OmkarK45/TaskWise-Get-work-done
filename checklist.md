@@ -17,3 +17,4 @@
 [] make a proper find method for get reqests 
 
 <!-- Mongo Notes -->
+.find({name:'some name'})

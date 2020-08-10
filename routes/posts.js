@@ -22,7 +22,12 @@ router.post('/',async (req,res)=>{
     const post = new Post({
         title:req.body.title,
         description:req.body.description,
-        userID:req.user
+        userID:req.user,
+        subtitle:req.body.subtitle,
+        category:req.body.category,
+        tags:req.body.tags,
+        time:req.body.time,
+        image:req.body.image
     });
     try{
         const savedPost = await post.save()
@@ -43,7 +48,20 @@ router.get('/:postId', async (req,res)=>{
     catch(err){
         res.json({message:err});
     }
+});
+
+// Route for searching particular task
+router.post('/search/:query', async(req,res)=>{
+    try{
+        const post = await Post.find({title:req.params.query})
+        res.json(post);
+    }catch(err){
+        res.json({
+            message:'Requested document was not found in database.'
+        });
+    }
 })
+
 
 // Delete a specific post
 router.delete('/:postId', async (req,res)=>{
