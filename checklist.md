@@ -3,10 +3,13 @@
 [x] build homepage
 [x] add user authentication
 [] add task schema [baki]:: to add >> externally hosted images >> imgur etc and render it on DOM
-[] add routes for adding, removing, seeing and updating tasks >> DONE 
+[x] add routes for adding, removing, seeing and updating tasks >> DONE 
+[] add routes for adding, removing, seeing and updating other schema >> TBD
 [x] add footer .. (thats all for now.) >> BAKI
-[] Create login and register form and POST it in backed ! :P
-[]
-[]
-[]
+[x] Create login and register form and POST it in backed ! :P
+[] create task dashboard
+[] create task cards
+[] design css and make mobile first
+[] add category sort 
+[] big ass logout button please 
 []
