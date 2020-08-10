@@ -3,11 +3,11 @@ const router = express.Router();
 const Post = require('../models/Post');
 const User = require('../models/User');
 const Joi = require('@hapi/joi');
-
+const {ensureAuthenticated, forwardAuthenticated} = require('../config/auth');
 // Gets all the posts
-router.get("/", async (req, res) => {
+router.get("/", ensureAuthenticated,async (req, res) => {
     try{
-        const posts = await Post.find({userID:req.user});
+        const posts = await Post.find({userID:req.user._id});
         res.json(posts);
         // res.send(req.user);
     }
@@ -18,11 +18,11 @@ router.get("/", async (req, res) => {
 });
 
 // Submits a post
-router.post('/',async (req,res)=>{
+router.post('/',ensureAuthenticated,async (req,res)=>{
     const post = new Post({
         title:req.body.title,
         description:req.body.description,
-        userID:req.user,
+        userID:req.user._id,
         subtitle:req.body.subtitle,
         category:req.body.category,
         tags:req.body.tags,
