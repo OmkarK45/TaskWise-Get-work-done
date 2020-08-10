@@ -5,7 +5,19 @@ const PostSchema = mongoose.Schema({
         type:String,
         required:true,
         min:1
-
+    },
+    subtitle:{
+        type: String
+    },
+    category:{
+        type: String
+    },
+    time:{
+        // due date maybe ?
+    },
+    tags:{
+        // tags will go here
+        type:[String]
     },
     description:{
         type:String,
@@ -15,8 +27,18 @@ const PostSchema = mongoose.Schema({
         type: Date,
         default : Date.now
     },
+    image:{
+        type:String,
+        required:false
+    },
     userID:{
         type:String
     }
 })
 module.exports = mongoose.model('Posts', PostSchema);
+// To do for this model
+/*
+1 Title, Subtitle, Due date, category, image, time, 
+
+
+*/

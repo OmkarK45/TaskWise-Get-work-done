@@ -13,3 +13,7 @@
 [] add category sort 
 [] big ass logout button please 
 []
+[] use debug for debugging and add morgan
+[] make a proper find method for get reqests 
+
+<!-- Mongo Notes -->
