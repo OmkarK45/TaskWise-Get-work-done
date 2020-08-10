@@ -18,3 +18,19 @@
 
 <!-- Mongo Notes -->
 .find({name:'some name'})
+
+<!-- ROUTING RULES -->
+1. / == landing page
+2. /user/login == login page
+3. /user/register == register page
+4. /dashboard == dashboard
+5. /dashboard/newTask == add new task for to do list
+6. /dashboard/seach == all search queries go here
+7. /dashboard/removeTask == remove the thing 
+
+<!-- Todos -->
+1. Design dashboard page .. i need to think of a new mongo structure which puts user tasks under particular mongo _id hmm
+2. Design nice cards layout and banner for home page with nice zen animated bg.
+3. HUGE logout button
+4. Add date picker and time picker
+5. Add juicy animations 
