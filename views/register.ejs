@@ -22,19 +22,19 @@
                       placeholder="Username" 
                       value="<%= typeof name != 'undefined' ? name : '' %>"
                       >
-                      <small><%- include('partials/messagesUsername') %></small>
+                      <small></small>
                     </div>
                   <div class="form-control">
                       <label for="email">Email Address</label>
                     <input type="email" id="email" name="email" placeholder="Email Address" value="<%= typeof email != 'undefined' ? email : '' %>"
                     value="<%= typeof password != 'undefined' ? password : '' %>"
                     >
-                    <small><%- include('partials/messagesEmail') %></small>
+                    <small></small>
                   </div>
                   <div class="form-control">
                     <label for="password">Password</label>
                     <input type="password" id="password" name="password" placeholder="Password">
-                    <small><%- include('partials/messagesPassword') %></small>
+                    <small></small>
                   </div>
           
                   <button class="btn-green" type="submit">Register
