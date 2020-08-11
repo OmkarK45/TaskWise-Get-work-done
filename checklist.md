@@ -21,9 +21,9 @@
 
 <!-- ROUTING RULES -->
 1. / == landing page
-2. /user/login == login page
-3. /user/register == register page
-4. /dashboard == dashboard
+2. /user/login == login page -- done with validation
+3. /user/register == register page -- done with validation
+4. /dashboard == dashboard -- design and implementation bakki
 5. /dashboard/newTask == add new task for to do list
 6. /dashboard/seach == all search queries go here
 7. /dashboard/removeTask == remove the thing 
