@@ -639,10 +639,13 @@ label {
   font-size: 25px;
   color: var(--neutralDark);
   display: block;
+  -webkit-transition: background-color .2s ease-in-out;
+  transition: background-color .2s ease-in-out;
 }
 
 .sidebar a:hover {
-  color: var(--blue);
+  background-color: #c5c9d1;
+  color: var(--neutralDark);
 }
 
 main .sidebar {
