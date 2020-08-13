@@ -1,7 +1,29 @@
 <%- include('partials/header') %>
-<h1>I'm dashboard bro</h1>
+
+<!-- Dashboard Structure -->
+<!-- Navigation Bar -->
+<!-- Nav-brand -->
+<!-- Nav-search-bar -->
+<!-- Big landing showing time and date and an image -->
+<!-- Task cards  -->
+<!-- Footer with a Fab button and having a plus button -->
+<section class="wrapper-main">
+    <!-- Sidebar -->
+    <div id="mySidebar" class="sidebar" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
+        <a href="#"><span><i class="fal fa-home"></i><span class="icon-text"> Home</span></a><br>
+        <a href="#"><i class="fal fa-home"></i><span class="icon-text"></span>services</a></span>
+        </a><br>
+        <a href="#"><i class="fal fa-home"></i><span class="icon-text"></span>clients</span></a><br>
+        <a href="#"><i class="fal fa-home"></i><span class="icon-text"></span>contact<span></a>
+      </div>
+    <!-- Main Section -->
+    <section class="main-section">
+        <a href="/user/logout">Logout krle <%= user.name%> </a>
+
+    </section>
+</section>
+
 
 <%- include('partials/notification') %>
-<a href="/user/logout">Logout krle <%= user.name%> </a>
 
 <%- include('partials/footer') %>

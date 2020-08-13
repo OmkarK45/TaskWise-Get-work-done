@@ -48,7 +48,7 @@ app.use('/user',authRoute);
 app.use('/dashboard',dashboardRoute);
 // Connect to DB
 mongoose.connect(
-    process.env.DB_CONNECTION,
+    process.env.DB_CONNECTION_LOCAL,
   { useNewUrlParser: true, useUnifiedTopology: true ,useCreateIndex:true},
   () => {
     console.log("Connected to DB");

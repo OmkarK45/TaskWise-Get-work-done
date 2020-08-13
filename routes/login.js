@@ -71,6 +71,7 @@ router.post('/register', async(req,res)=>{
 
 
 // Login handle 
+// Temporary commented for dashboard design
 router.post("/login", (req, res,next) => {
   passport.authenticate('local',{
     successRedirect:'/dashboard',
