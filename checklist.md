@@ -34,3 +34,9 @@
 3. HUGE logout button
 4. Add date picker and time picker
 5. Add juicy animations 
+
+1. todo fresh
+1. nicely design homepage with proper things 
+2. add footer 
+3. work on dashboard today (UI and fix a color scheme)
+

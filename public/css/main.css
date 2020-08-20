@@ -286,7 +286,7 @@ header {
   height: 8vh;
 }
 
-nav {
+nav.navigation {
   font-family: var(--headingFont);
   color: var(--neutraldark);
   font-weight: 500;
@@ -303,7 +303,7 @@ nav {
           align-items: center;
 }
 
-nav ul {
+nav.navigation ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -312,7 +312,7 @@ nav ul {
           align-items: center;
 }
 
-nav ul li {
+nav.navigation ul li {
   font-size: 1.1rem;
   cursor: pointer;
   margin: 0 2rem;
@@ -659,11 +659,6 @@ main .sidebar {
 .fal,
 .icon-text {
   vertical-align: middle;
-}
-
-.fal {
-  padding-bottom: 3px;
-  margin-right: 30px;
 }
 
 #main {

@@ -60,7 +60,9 @@ app.get("/", (req, res) => {
     res.render('landing');
 });
   
-
+app.get('/dashboardnew',(req,res)=>{
+  res.render('dashboard2');
+})
 
 // Start the server
 const PORT = process.env.PORT || 5000;

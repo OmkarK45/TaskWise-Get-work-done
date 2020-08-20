@@ -4,7 +4,7 @@ header{
     height: 8vh;
     
 }
-nav{
+nav.navigation{
     font-family: var(--headingFont);
     color: var(--neutraldark);
     font-weight: 500;
@@ -55,7 +55,6 @@ nav{
     }
     p{
         margin-bottom: 2.5rem;
-
     }
 }
 
