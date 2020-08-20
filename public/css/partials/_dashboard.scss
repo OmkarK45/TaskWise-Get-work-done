@@ -141,21 +141,42 @@ main .sidebar {
 /*Main styling*/
 .work-blocks{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr;
+    // grid-template-columns: repeat(auto-fill, minmax(200px, 1fr,1fr,1fr)); 
     height: 75vh;
+    overflow: auto;
+    gap: 2rem;
+    grid-template-areas: "box1 box2 box3";
 }
-
+/*Media Query*/ 
+@media(max-width:768px){
+  .work-blocks{
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "box1"
+    "box2"
+    "box3";
+  }
+}
+@media(max-width:950px){
+  .work-blocks{
+    grid-auto-columns: repeat(2, 1fr);
+  }
+}
 .box-1{
   background-color: lightblue;
-
+  grid-area: box1;
 }
 
 .box-2{
   background-color: lightgreen;
+  grid-area: box2;
 
 }
 .box-3{
   background-color: lightyellow;
+  grid-area: box3;
 
 }
 
