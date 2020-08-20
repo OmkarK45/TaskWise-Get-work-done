@@ -635,6 +635,7 @@ label {
 
 .sidebar a {
   padding: 8px 8px 8px 32px;
+  padding: 1rem 1rem 1rem 0.8rem;
   text-decoration: none;
   font-size: 25px;
   color: var(--white);
@@ -642,6 +643,7 @@ label {
   display: block;
   -webkit-transition: background-color .2s ease-in-out;
   transition: background-color .2s ease-in-out;
+  margin: 0 1rem;
 }
 
 .sidebar a:hover {
@@ -668,6 +670,7 @@ main .sidebar {
 }
 
 .far {
+  opacity: 0.6;
   padding-right: 2rem;
 }
 
