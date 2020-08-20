@@ -625,7 +625,7 @@ label {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: var(--white);
+  background-color: #42389D;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   overflow-x: hidden;
@@ -637,15 +637,21 @@ label {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: var(--neutralDark);
+  color: var(--white);
+  border-radius: 5px;
   display: block;
   -webkit-transition: background-color .2s ease-in-out;
   transition: background-color .2s ease-in-out;
 }
 
 .sidebar a:hover {
-  background-color: #c5c9d1;
-  color: var(--neutralDark);
+  background-color: #5145CD;
+  color: var(--white);
+}
+
+.sidebar a:active {
+  background-color: #362F78;
+  color: var(--white);
 }
 
 main .sidebar {
@@ -659,6 +665,10 @@ main .sidebar {
 .fal,
 .icon-text {
   vertical-align: middle;
+}
+
+.far {
+  padding-right: 2rem;
 }
 
 #main {
@@ -675,6 +685,10 @@ main .sidebar {
   .sidebar a {
     font-size: 18px;
   }
+}
+
+.icon-text {
+  font-size: 1rem;
 }
 
 /*3. Fixed class for flex and grid*/
