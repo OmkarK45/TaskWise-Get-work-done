@@ -376,17 +376,32 @@ nav.navigation ul li {
   background-color: var(--lightGrey);
   padding: 0.5rem 1rem;
   border-radius: 10px;
-  -webkit-transition: -webkit-box-shadow 0.1s ease-in-out;
-  transition: -webkit-box-shadow 0.1s ease-in-out;
-  transition: box-shadow 0.1s ease-in-out;
-  transition: box-shadow 0.1s ease-in-out, -webkit-box-shadow 0.1s ease-in-out;
+  -webkit-transition: -webkit-transform 0.1s ease-in-out;
+  transition: -webkit-transform 0.1s ease-in-out;
+  transition: transform 0.1s ease-in-out;
+  transition: transform 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
   -webkit-box-shadow: var(--level-1);
           box-shadow: var(--level-1);
 }
 
-.btn-light:hover {
+.btn-semiDark {
+  background-color: #2A4FD7;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  -webkit-box-shadow: var(--level-1);
+          box-shadow: var(--level-1);
+}
+
+.btn-light:hover, .btn-semiDark:hover {
   -webkit-box-shadow: var(--level-2);
           box-shadow: var(--level-2);
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
 }
 
 .btn-wrapper {
@@ -773,7 +788,7 @@ main .sidebar {
 }
 
 .main-thing {
-  margin: 2rem 1rem;
+  margin: 1rem 1rem;
 }
 
 /*Main styling*/
@@ -825,6 +840,61 @@ main .sidebar {
   grid-area: box3;
 }
 
+.fa-plus-circle {
+  background-color: #1B3FC2;
+  padding: 0.3rem;
+  border-radius: 50%;
+}
+
+.main-thing-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: green;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-thing-heading h4 {
+  font-weight: 600;
+}
+
+.main-thing-heading a {
+  display: inline-block;
+  margin-left: 2rem;
+}
+
+.container-wrapper {
+  padding: 1rem 0;
+}
+
+.container-wrapper p {
+  color: #000;
+  margin: 1rem 0;
+  font-size: 1.3rem;
+  line-height: 1.7;
+  letter-spacing: 1px;
+}
+
+/*Card Styles*/
+.card-wrapper {
+  background-color: lightgreen;
+  width: 90%;
+  border-radius: 10px;
+  height: 60vh;
+  padding: 1rem;
+}
+
+.card {
+  width: 100%;
+  margin: 0 auto;
+  background-color: var(--white);
+  border-radius: 10px;
+  height: 180px;
+}
+
+/*Tag colors & Category Styling*/
 /*3. Fixed class for flex and grid*/
 /*4. Global Styling*/
 * {

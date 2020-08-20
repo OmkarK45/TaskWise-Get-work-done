@@ -1,32 +1,3 @@
-// .wrapper-main{
-//     display: grid;
-//     grid-template-columns: 0.05fr 0.95fr;
-//     height: 100vh;
-// }
-// section.nav{
-//     background-color: lightblue;
-// }
-// section.nav:hover{
-//     width: 120%;
-// }
-// aside.side-nav{
-//     background-color: lightgreen;
-//     margin: 0 auto;
-//     width: 90%;
-//     li{
-//         list-style: none;
-//         font-size: 2rem;
-//     }
-//     height: 100%;
-// }
-// .side-nav-links{
-//     height: 100%;
-
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     justify-content: space-evenly;
-// }
 .wrapper-main{
   display: grid;
   height: 100vh;
@@ -136,7 +107,7 @@ main .sidebar {
 }
 .main-thing{
   // background-color: green;
-  margin: 2rem 1rem;
+  margin: 1rem 1rem;
 }
 /*Main styling*/
 .work-blocks{
@@ -180,4 +151,49 @@ main .sidebar {
 
 }
 
+.fa-plus-circle{
+  background-color: #1B3FC2;
+  padding: 0.3rem;
+  border-radius: 50%;
+}
+.main-thing-heading{
+  display: flex;
+  // padding: 1rem 0;
+  background-color: green;
+  align-items: center;
+  h4{
+    font-weight: 600;
+  }
+  a{
+    display: inline-block;
+    margin-left: 2rem;
+  }
+}
+.container-wrapper{
+  padding: 1rem 0;
+  p{
+    color: #000;
+    // text-align: center;
+    margin: 1rem 0;
+    font-size: 1.3rem;
+    line-height: 1.7;
+    letter-spacing: 1px;
+  }
+}
+/*Card Styles*/
+.card-wrapper{
+  background-color: lightgreen;
+  width: 90%;
+  border-radius: 10px;
+  height: 60vh;
+  padding: 1rem;
+}
 
+.card{
+  width: 100%;
+  margin: 0 auto;
+  background-color: var(--white);
+  border-radius: 10px;
+  height: 180px;
+}
+/*Tag colors & Category Styling*/ 

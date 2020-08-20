@@ -62,16 +62,26 @@ nav.navigation{
     background-color: var(--darkBlue);
     color: var(--lightGrey);
     margin-right:2rem ;
+    
 }
 .btn-light{
     background-color: var(--lightGrey);
     padding: 0.5rem 1rem;
     border-radius: 10px;
-    transition: box-shadow 0.1s ease-in-out;
+    transition: transform 0.1s ease-in-out;
     box-shadow: var(--level-1);
 }
-.btn-light:hover{
+.btn-semiDark{
+    background-color:#2A4FD7;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: var(--level-1);
+}
+.btn-light:hover,.btn-semiDark:hover{
     box-shadow: var(--level-2);
+    transform: translateY(-3px);
 }
 .btn-wrapper{
     display: flex;
