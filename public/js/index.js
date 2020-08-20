@@ -49,18 +49,18 @@
 //   small.style.opacity = 0;
 // }
 // })
-var mini = true;
+// var mini = true;
 
-function toggleSidebar() {
-  if (mini) {
-    console.log("opening sidebar");
-    document.getElementById("mySidebar").style.width = "250px";
-    document.querySelector(".main-section").style.marginLeft = "250px";
-    this.mini = false;
-  } else {
-    console.log("closing sidebar");
-    document.getElementById("mySidebar").style.width = "85px";
-    document.querySelector(".main-section").style.marginLeft = "85px";
-    this.mini = true;
-  }
-}
+// function toggleSidebar() {
+//   if (mini) {
+//     console.log("opening sidebar");
+//     document.getElementById("mySidebar").style.width = "250px";
+//     document.querySelector(".main-section").style.marginLeft = "250px";
+//     this.mini = false;
+//   } else {
+//     console.log("closing sidebar");
+//     document.getElementById("mySidebar").style.width = "85px";
+//     document.querySelector(".main-section").style.marginLeft = "85px";
+//     this.mini = true;
+//   }
+// }

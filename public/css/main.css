@@ -618,14 +618,29 @@ label {
   font-weight: 300;
 }
 
+.wrapper-main {
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  -ms-grid-columns: 250px auto;
+      grid-template-columns: 250px auto;
+      grid-template-areas: "sidebar main";
+}
+
+#mySidebar {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: sidebar;
+}
+
 .sidebar {
   height: 100%;
   width: 85px;
-  position: fixed;
+  width: 250px;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #42389D;
+  background-color: #42389d;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   overflow-x: hidden;
@@ -641,18 +656,18 @@ label {
   color: var(--white);
   border-radius: 5px;
   display: block;
-  -webkit-transition: background-color .2s ease-in-out;
-  transition: background-color .2s ease-in-out;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
   margin: 0 1rem;
 }
 
 .sidebar a:hover {
-  background-color: #5145CD;
+  background-color: #5145cd;
   color: var(--white);
 }
 
 .sidebar a:active {
-  background-color: #362F78;
+  background-color: #362f78;
   color: var(--white);
 }
 
@@ -692,6 +707,16 @@ main .sidebar {
 
 .icon-text {
   font-size: 1rem;
+}
+
+/*Top Navigation Styling*/
+.dashboard-header {
+  padding: 1.5rem;
+  background-color: white;
+}
+
+.search-bar {
+  margin-left: 1rem;
 }
 
 /*3. Fixed class for flex and grid*/

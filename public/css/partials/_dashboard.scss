@@ -27,74 +27,88 @@
 //     align-items: center;
 //     justify-content: space-evenly;
 // }
-
+.wrapper-main{
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 250px auto;
+  grid-template-areas: "sidebar main";
+}
+#mySidebar{
+  grid-area: sidebar;
+}
 .sidebar {
-    height: 100%;
-    width: 85px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color:#42389D;
-    transition: 0.5s;
-    overflow-x: hidden;
-    padding-top: 60px;
-    white-space: nowrap;
+  height: 100%;
+  width: 85px;
+  width: 250px;
+  // position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #42389d;
+  transition: 0.5s;
+  overflow-x: hidden;
+  padding-top: 60px;
+  white-space: nowrap;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  padding: 1rem 1rem 1rem 0.8rem;
+  text-decoration: none;
+  font-size: 25px;
+  color: var(--white);
+  border-radius: 5px;
+  display: block;
+  transition: background-color 0.2s ease-in-out;
+  margin: 0 1rem;
+}
+
+.sidebar a:hover {
+  background-color: #5145cd;
+  color: var(--white);
+}
+.sidebar a:active {
+  background-color: #362f78;
+  color: var(--white);
+}
+main .sidebar {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.fal,
+.icon-text {
+  vertical-align: middle;
+}
+.far {
+  opacity: 0.6;
+  padding-right: 2rem;
+}
+#main {
+  padding: 16px;
+  margin-left: 85px;
+  transition: margin-left 0.5s;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
   }
-  
   .sidebar a {
-    padding: 8px 8px 8px 32px;
-    padding: 1rem 1rem 1rem 0.8rem;
-    text-decoration: none;
-    font-size: 25px;
-    color: var(--white);
-    border-radius: 5px;
-    display: block;
-    transition: background-color .2s ease-in-out;
-    margin: 0 1rem;
+    font-size: 18px;
   }
-  
-  .sidebar a:hover {
-    background-color:#5145CD; 
-    color: var(--white);
-    
-  }
-  .sidebar a:active{
-    background-color:#362F78; 
-   color: var(--white);
- 
-  }
-  main .sidebar {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
-  .fal,
-  .icon-text {
-    vertical-align: middle;
-  }
-  .far{
-    opacity: 0.6;
-    padding-right: 2rem;
-  }
-  #main {
-    padding: 16px;
-    margin-left: 85px;
-    transition: margin-left 0.5s;
-  }
-  
-  @media screen and (max-height: 450px) {
-    .sidebar {
-      padding-top: 15px;
-    }
-    .sidebar a {
-      font-size: 18px;
-    }
-  }
-  .icon-text{
-    font-size: 1rem;
-    
-  }
+}
+.icon-text {
+  font-size: 1rem;
+}
+/*Top Navigation Styling*/
+.dashboard-header{
+  padding: 1.5rem;
+  background-color: white;
+}
+.search-bar{
+  margin-left: 1rem;
+}
