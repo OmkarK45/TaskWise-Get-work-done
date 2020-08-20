@@ -106,9 +106,17 @@ main .sidebar {
 }
 /*Top Navigation Styling*/
 .dashboard-header{
-  padding: 1.5rem;
+  padding: 1rem;
   background-color: white;
 }
 .search-bar{
-  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  input{
+    border: none;
+  }
+  .fa-search{
+    font-size: 1.5rem;
+    padding: 0 0.5rem;
+  }
 }

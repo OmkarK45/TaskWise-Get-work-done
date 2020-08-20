@@ -22,6 +22,9 @@
         <section class="dashboard-header">
             <div class="search-bar">
                 <i class="far fa-search"></i>
+                <form action="/search" method="POST">
+                    <input type="text" placeholder="Search...">
+                </form>
             </div>
         </section>
         <a href="/user/logout">Logout krle <%= user.name%> </a>
