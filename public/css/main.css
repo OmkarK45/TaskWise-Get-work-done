@@ -872,29 +872,51 @@ main .sidebar {
 .container-wrapper p {
   color: #000;
   margin: 1rem 0;
-  font-size: 1.3rem;
   line-height: 1.7;
   letter-spacing: 1px;
 }
 
 /*Card Styles*/
 .card-wrapper {
-  background-color: lightgreen;
+  background-color: var(--neutralLight);
+  background-color: #dde3e6;
   width: 90%;
   border-radius: 10px;
-  height: 60vh;
+  height: 62vh;
+  overflow: scroll;
   padding: 1rem;
 }
 
 .card {
   width: 100%;
-  margin: 0 auto;
+  margin: 1rem auto;
+  margin-top: 0;
+  padding: 1rem;
   background-color: var(--white);
   border-radius: 10px;
-  height: 180px;
 }
 
 /*Tag colors & Category Styling*/
+.task-category {
+  border-radius: 10px;
+  background-color: var(--lightest-blue);
+  padding: 0.3rem 0.5rem;
+  font-size: 0.9rem;
+}
+
+.task-title {
+  font-size: 1.7rem;
+  margin: 1rem auto;
+}
+
+.task-subtitle {
+  font-size: 1.2rem;
+}
+
+.task-description {
+  font-size: 1rem;
+}
+
 /*3. Fixed class for flex and grid*/
 /*4. Global Styling*/
 * {
