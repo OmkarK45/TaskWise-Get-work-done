@@ -26,6 +26,10 @@
                     <input type="text" placeholder="Search...">
                 </form>
             </div>
+            <div class="user-info">
+                <p><%= user.name %> </p>
+                    <a class="btn-light" href="/user/logout"><i class="far fa-sign-out-alt"></i>Logout</a>
+            </div>
         </section>
         <a href="/user/logout">Logout krle <%= user.name%> </a>
     </section>

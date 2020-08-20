@@ -373,7 +373,20 @@ nav.navigation ul li {
 }
 
 .btn-light {
-  background-color: var();
+  background-color: var(--lightGrey);
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  -webkit-transition: -webkit-box-shadow 0.1s ease-in-out;
+  transition: -webkit-box-shadow 0.1s ease-in-out;
+  transition: box-shadow 0.1s ease-in-out;
+  transition: box-shadow 0.1s ease-in-out, -webkit-box-shadow 0.1s ease-in-out;
+  -webkit-box-shadow: var(--level-1);
+          box-shadow: var(--level-1);
+}
+
+.btn-light:hover {
+  -webkit-box-shadow: var(--level-2);
+          box-shadow: var(--level-2);
 }
 
 .btn-wrapper {
@@ -661,6 +674,11 @@ label {
   margin: 0 1rem;
 }
 
+.sidebar a .far {
+  opacity: 0.6;
+  padding-right: 2rem;
+}
+
 .sidebar a:hover {
   background-color: #5145cd;
   color: var(--white);
@@ -682,11 +700,6 @@ main .sidebar {
 .fal,
 .icon-text {
   vertical-align: middle;
-}
-
-.far {
-  opacity: 0.6;
-  padding-right: 2rem;
 }
 
 #main {
@@ -712,6 +725,15 @@ main .sidebar {
 /*Top Navigation Styling*/
 .dashboard-header {
   padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: white;
 }
 
@@ -731,6 +753,23 @@ main .sidebar {
 .search-bar .fa-search {
   font-size: 1.5rem;
   padding: 0 0.5rem;
+}
+
+.user-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.user-info p {
+  margin-right: 1rem;
+}
+
+.user-info .fa-sign-out-alt {
+  margin-right: 1rem;
 }
 
 /*3. Fixed class for flex and grid*/
@@ -837,7 +876,6 @@ small,
 }
 
 p {
-  margin-bottom: 1.15rem;
   max-width: 30em;
 }
 

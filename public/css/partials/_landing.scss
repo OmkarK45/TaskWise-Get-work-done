@@ -64,7 +64,14 @@ nav.navigation{
     margin-right:2rem ;
 }
 .btn-light{
-    background-color: var();
+    background-color: var(--lightGrey);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    transition: box-shadow 0.1s ease-in-out;
+    box-shadow: var(--level-1);
+}
+.btn-light:hover{
+    box-shadow: var(--level-2);
 }
 .btn-wrapper{
     display: flex;
