@@ -159,7 +159,7 @@ main .sidebar {
 .main-thing-heading{
   display: flex;
   // padding: 1rem 0;
-  background-color: green;
+  // background-color: green;
   align-items: center;
   h4{
     font-weight: 600;
@@ -216,4 +216,8 @@ main .sidebar {
 }
 .task-description{
   font-size:1rem;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
 }

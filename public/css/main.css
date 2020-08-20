@@ -850,7 +850,6 @@ main .sidebar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: green;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -915,6 +914,12 @@ main .sidebar {
 
 .task-description {
   font-size: 1rem;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+  /* make scrollbar transparent */
 }
 
 /*3. Fixed class for flex and grid*/
