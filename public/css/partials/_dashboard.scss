@@ -36,7 +36,8 @@
   margin: 0 1rem;
   .far {
     opacity: 0.6;
-    padding-right: 2rem;
+    padding: 1rem;
+    // background-color: green;
   }
 }
 
@@ -59,6 +60,7 @@ main .sidebar {
 .fal,
 .icon-text {
   vertical-align: middle;
+  // background-color: yellow;
 }
 
 #main {
@@ -111,6 +113,14 @@ main .sidebar {
   background-color: #F2F6FF;
   padding: 1rem 1rem;
   border-radius: 25px;
+}
+.main-thing-heading{
+  // background-color: cyan;
+
+  h3{
+    padding: 0 3rem;
+    // background-color: green;
+  }
 }
 /*Main styling*/
 .work-blocks{
@@ -187,7 +197,7 @@ main .sidebar {
 /*Card Styles*/
 .card-wrapper{
   background-color: var(--neutralLight);
-  background-color: #dde3e6;
+  background-color: #e5eeff;
   width: 90%;
   border-radius: 10px;
   height: 62vh;
@@ -209,17 +219,17 @@ main .sidebar {
   border-radius: 10px;
   background-color: var(--lightest-blue);
   padding: 0.3rem 0.5rem;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
 }
 .task-title{
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   margin: 1rem auto;
 }
 .task-subtitle{
-  font-size: 1.2rem;
+  font-size: 0.8rem;
 }
 .task-description{
-  font-size:1rem;
+  font-size:0.9rem;
 }
 ::-webkit-scrollbar {
   width: 0px;
@@ -235,10 +245,10 @@ main .sidebar {
   bottom: 0;
   left: 0;
   text-align: left;
-  background: rgba(179, 179, 179, 0.5);
+  background: rgba(0, 0, 0, 0.1);
   // transition: backdrop-filter .25s ease-in-out;
   // 
-  
+  // backdrop-filter: blur(5px);
 }
 
 .modal__bg {
@@ -264,7 +274,7 @@ main .sidebar {
 }
 
 .modal__inner {
-  transition: top .09s ease;
+  transition: top .5s ease;
   // Animation
   position: absolute;
   top: -20%;
@@ -319,4 +329,7 @@ main .sidebar {
     height: 90%;
     box-sizing: border-box;
   }
+}
+#add-new{
+  margin-left: 2rem;
 }

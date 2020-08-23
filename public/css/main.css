@@ -694,7 +694,7 @@ label {
 
 .sidebar a .far {
   opacity: 0.6;
-  padding-right: 2rem;
+  padding: 1rem;
 }
 
 .sidebar a:hover {
@@ -796,6 +796,10 @@ main .sidebar {
   border-radius: 25px;
 }
 
+.main-thing-heading h3 {
+  padding: 0 3rem;
+}
+
 /*Main styling*/
 .work-blocks {
   display: -ms-grid;
@@ -884,7 +888,7 @@ main .sidebar {
 /*Card Styles*/
 .card-wrapper {
   background-color: var(--neutralLight);
-  background-color: #dde3e6;
+  background-color: #e5eeff;
   width: 90%;
   border-radius: 10px;
   height: 62vh;
@@ -906,20 +910,20 @@ main .sidebar {
   border-radius: 10px;
   background-color: var(--lightest-blue);
   padding: 0.3rem 0.5rem;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
 }
 
 .task-title {
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   margin: 1rem auto;
 }
 
 .task-subtitle {
-  font-size: 1.2rem;
+  font-size: 0.8rem;
 }
 
 .task-description {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 ::-webkit-scrollbar {
@@ -938,7 +942,7 @@ main .sidebar {
   bottom: 0;
   left: 0;
   text-align: left;
-  background: rgba(179, 179, 179, 0.5);
+  background: rgba(0, 0, 0, 0.1);
 }
 
 .modal__bg {
@@ -964,8 +968,8 @@ main .sidebar {
 }
 
 .modal__inner {
-  -webkit-transition: top .09s ease;
-  transition: top .09s ease;
+  -webkit-transition: top .5s ease;
+  transition: top .5s ease;
   position: absolute;
   top: -20%;
   right: 0;
@@ -1021,6 +1025,10 @@ main .sidebar {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
+}
+
+#add-new {
+  margin-left: 2rem;
 }
 
 /*3. Fixed class for flex and grid*/
