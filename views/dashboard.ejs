@@ -35,7 +35,8 @@
         <div class="main-thing">
             <div class="main-thing-heading">
                 <h3>My Tasks.</h3>
-                <label id="add-new" for="modal-1" class="btn-semiDark"><i class="far fa-plus-circle"></i> Add New</label>
+                <label id="add-new" for="modal-1" class="btn-semiDark"><i class="far fa-plus-circle"></i> Add
+                    New</label>
 
                 <!-- MODAL FOR NEW TASK -->
                 <input class="modal-state" id="modal-1" type="checkbox" />
@@ -57,7 +58,8 @@
                             <div class="form-control">
                                 <label for="taskname">Description</label>
                                 <!-- <input type="text" id="taskDesc" name="taskDesc" placeholder="Description"> -->
-                                <textarea name="description" id="" cols="30" rows="5" placeholder="You can include brief description of your task"></textarea>
+                                <textarea name="description" id="" cols="30" rows="5"
+                                    placeholder="You can include brief description of your task"></textarea>
                             </div>
                             <button class="btn-green" id="submit" type="submit">Create</button>
                         </form>
@@ -75,7 +77,23 @@
                         <!-- Card here OK -->
                         <div class="card">
                             <!-- Span Category-->
-                            <span class="task-category">Chilling</span>
+                            <div class="card-row">
+                                <div class="category">
+                                    <span class="task-category">Chilling</span>
+                                </div>
+                                <!-- DROPDOWN MENU FOR CARD :DD -->
+                                <div class="dropdown">
+                                    <!-- <i class="dropbtn fa"></i> -->
+                                    <span class="menu-holder">
+                                        <i class="fal fa-ellipsis-v dropbtn"></i>
+                                    </span>
+                                    <div class="dropdown-content">
+                                        <a href="#">Link 1</a>
+                                        <a href="#">Link 2</a>
+                                        <a href="#">Link 3</a>
+                                    </div>
+                                </div>
+                            </div>
                             <!-- Task Title -->
                             <h3 class="task-title">Watch Sherlock</h3>
                             <!-- Task Subtitle -->
