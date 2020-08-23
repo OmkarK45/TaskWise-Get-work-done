@@ -530,7 +530,7 @@ a {
   font-size: 1.6rem;
 }
 
-input {
+input, textarea {
   display: block;
   width: 100%;
   padding: 15px 25px;
@@ -934,9 +934,11 @@ main .sidebar {
   bottom: 0;
   left: 0;
   text-align: left;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(179, 179, 179, 0.5);
   -webkit-transition: opacity .25s ease;
   transition: opacity .25s ease;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 
 .modal__bg {
@@ -972,10 +974,10 @@ main .sidebar {
   width: 50%;
   margin: auto;
   overflow: auto;
-  background: #fff;
-  border-radius: 5px;
+  background: white;
+  border-radius: 10px;
   padding: 1em 2em;
-  height: 50%;
+  height: 90%;
 }
 
 .modal__close {

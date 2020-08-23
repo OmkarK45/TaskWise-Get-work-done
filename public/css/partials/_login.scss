@@ -65,7 +65,7 @@ a{
     font-family: 'Product Sans',sans-serif;
     font-size: 1.6rem;
 }
-input{
+input,textarea{
     display: block;
     width: 100%;
     padding: 15px 25px;
@@ -75,6 +75,7 @@ input{
     border-radius: 5px;
     border: 1.2px solid hsl(246, 25%, 77%);
 }
+
 input:active{
     border: 1px solid hsl(249, 10%, 26%);
     outline: none;

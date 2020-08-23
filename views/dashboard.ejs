@@ -36,20 +36,35 @@
             <div class="main-thing-heading">
                 <h4>My Tasks.</h4>
                 <label for="modal-1" class="btn-semiDark"><i class="far fa-plus-circle"></i> Add New</label>
-                <form action="/new" method="POST">
-                    <!-- MODAL FOR NEW TASK -->
-                    <input class="modal-state" id="modal-1" type="checkbox" />
-                    <div class="modal">
-                        <label class="modal__bg" for="modal-1"></label>
-                        <div class="modal__inner">
-                            <label class="modal__close" for="modal-1"></label>
-                            <p>Create a new task</p>
-                            <p>
-                                Checking
-                            </p>
-                        </div>
+
+                <!-- MODAL FOR NEW TASK -->
+                <input class="modal-state" id="modal-1" type="checkbox" />
+                <div class="modal">
+                    <label class="modal__bg" for="modal-1"></label>
+                    <div class="modal__inner">
+                        <label class="modal__close" for="modal-1"></label>
+                        <h3 class="text-center">Create new task</h3>
+                        <!-- Form goes here -->
+                        <form action="/new" method="POST" class="box" id="form">
+                            <div class="form-control">
+                                <label for="taskname">Task</label>
+                                <input type="text" id="taskTitle" name="taskTitle" placeholder="Task Title">
+                            </div>
+                            <div class="form-control">
+                                <label for="tasksub">Subtitle</label>
+                                <input type="text" id="taskSubtitle" name="taskSubtitle" placeholder="Subtitle">
+                            </div>
+                            <div class="form-control">
+                                <label for="taskname">Description</label>
+                                <!-- <input type="text" id="taskDesc" name="taskDesc" placeholder="Description"> -->
+                                <textarea name="description" id="" cols="30" rows="10">
+                                    asdfasdfds
+                                </textarea>
+                            </div>
+                        </form>
                     </div>
-                </form>
+                </div>
+
             </div>
 
             <!-- Main Container -->
