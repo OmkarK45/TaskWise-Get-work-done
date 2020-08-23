@@ -35,16 +35,29 @@
         <div class="main-thing">
             <div class="main-thing-heading">
                 <h4>My Tasks.</h4>
-                <a href="#" class="btn-semiDark"><i class="far fa-plus-circle"></i> Add New</a>
+                <label for="modal-1" class="btn-semiDark"><i class="far fa-plus-circle"></i> Add New</label>
+                <form action="/new" method="POST">
+                    <!-- MODAL FOR NEW TASK -->
+                    <input class="modal-state" id="modal-1" type="checkbox" />
+                    <div class="modal">
+                        <label class="modal__bg" for="modal-1"></label>
+                        <div class="modal__inner">
+                            <label class="modal__close" for="modal-1"></label>
+                            <p>Create a new task</p>
+                            <p>
+                                Checking
+                            </p>
+                        </div>
+                    </div>
+                </form>
             </div>
 
             <!-- Main Container -->
             <div class="flex flex-wrap w-full container-wrapper px-2">
-                
                 <!-- Ongoing Tasks -->
                 <div class="w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/3 mb-4">
                     <p>Ongoing Tasks</p>
-                    <div class="card-wrapper ">
+                    <div class="card-wrapper">
                         <!-- Card here OK -->
                         <div class="card">
                             <!-- Span Category-->

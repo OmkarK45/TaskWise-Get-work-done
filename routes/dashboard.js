@@ -17,4 +17,13 @@ router.get('/',ensureAuthenticated,(req,res)=>{
   })
     
 
+// Get create route on dashboard
+// post request to new note 
+// Add new Ongoing task
+// Make a new form in frontend which submits to /new and then save that post and render to frontend using ejs
+
+router.post('/new',ensureAuthenticated,(req,res)=>{
+
+})
+
 module.exports = router;

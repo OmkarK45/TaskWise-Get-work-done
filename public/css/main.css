@@ -395,6 +395,7 @@ nav.navigation ul li {
   transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
   -webkit-box-shadow: var(--level-1);
           box-shadow: var(--level-1);
+  cursor: pointer;
 }
 
 .btn-light:hover, .btn-semiDark:hover {
@@ -844,6 +845,7 @@ main .sidebar {
   background-color: #1B3FC2;
   padding: 0.3rem;
   border-radius: 50%;
+  margin-right: 0.5rem;
 }
 
 .main-thing-heading {
@@ -920,6 +922,103 @@ main .sidebar {
   width: 0px;
   background: transparent;
   /* make scrollbar transparent */
+}
+
+/*CSS FOR MODAL*/
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: left;
+  background: rgba(0, 0, 0, 0.9);
+  -webkit-transition: opacity .25s ease;
+  transition: opacity .25s ease;
+}
+
+.modal__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.modal-state {
+  display: none;
+}
+
+.modal-state:checked + .modal {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-state:checked + .modal .modal__inner {
+  top: 0;
+}
+
+.modal__inner {
+  -webkit-transition: top .25s ease;
+  transition: top .25s ease;
+  position: absolute;
+  top: -20%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  margin: auto;
+  overflow: auto;
+  background: #fff;
+  border-radius: 5px;
+  padding: 1em 2em;
+  height: 50%;
+}
+
+.modal__close {
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  width: 1.1em;
+  height: 1.1em;
+  cursor: pointer;
+}
+
+.modal__close:after,
+.modal__close:before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 1.5em;
+  background: #ccc;
+  display: block;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  left: 50%;
+  margin: -3px 0 0 -1px;
+  top: 0;
+}
+
+.modal__close:hover:after,
+.modal__close:hover:before {
+  background: #aaa;
+}
+
+.modal__close:before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 768px) {
+  .modal__inner {
+    width: 90%;
+    height: 90%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
 }
 
 /*3. Fixed class for flex and grid*/
