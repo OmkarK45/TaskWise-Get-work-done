@@ -654,6 +654,7 @@ label {
   -ms-grid-columns: 250px auto;
       grid-template-columns: 250px auto;
       grid-template-areas: "sidebar main";
+  background-color: #fff;
 }
 
 #mySidebar {
@@ -669,7 +670,8 @@ label {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #42389d;
+  background-color: var(--neutralLight);
+  background-color: #ffffff;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   overflow-x: hidden;
@@ -682,11 +684,11 @@ label {
   padding: 1rem 1rem 1rem 0.8rem;
   text-decoration: none;
   font-size: 25px;
-  color: var(--white);
+  color: var(--neutralDark);
   border-radius: 5px;
   display: block;
-  -webkit-transition: background-color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out;
+  -webkit-transition: background-color 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out;
   margin: 0 1rem;
 }
 
@@ -789,7 +791,9 @@ main .sidebar {
 }
 
 .main-thing {
-  margin: 1rem 1rem;
+  background-color: #F2F6FF;
+  padding: 1rem 1rem;
+  border-radius: 25px;
 }
 
 /*Main styling*/
@@ -935,10 +939,6 @@ main .sidebar {
   left: 0;
   text-align: left;
   background: rgba(179, 179, 179, 0.5);
-  -webkit-transition: opacity .25s ease;
-  transition: opacity .25s ease;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
 }
 
 .modal__bg {
@@ -964,8 +964,8 @@ main .sidebar {
 }
 
 .modal__inner {
-  -webkit-transition: top .25s ease;
-  transition: top .25s ease;
+  -webkit-transition: top .09s ease;
+  transition: top .09s ease;
   position: absolute;
   top: -20%;
   right: 0;

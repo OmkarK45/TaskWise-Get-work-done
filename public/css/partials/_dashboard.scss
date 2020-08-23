@@ -3,6 +3,7 @@
   height: 100vh;
   grid-template-columns: 250px auto;
   grid-template-areas: "sidebar main";
+  background-color: #fff;
 }
 #mySidebar{
   grid-area: sidebar;
@@ -15,7 +16,8 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #42389d;
+  background-color: var(--neutralLight);
+  background-color: #ffffff;
   transition: 0.5s;
   overflow-x: hidden;
   padding-top: 60px;
@@ -27,10 +29,10 @@
   padding: 1rem 1rem 1rem 0.8rem;
   text-decoration: none;
   font-size: 25px;
-  color: var(--white);
+  color: var(--neutralDark);
   border-radius: 5px;
   display: block;
-  transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.1s ease-in-out;
   margin: 0 1rem;
   .far {
     opacity: 0.6;
@@ -106,8 +108,9 @@ main .sidebar {
   }
 }
 .main-thing{
-  // background-color: green;
-  margin: 1rem 1rem;
+  background-color: #F2F6FF;
+  padding: 1rem 1rem;
+  border-radius: 25px;
 }
 /*Main styling*/
 .work-blocks{
@@ -233,8 +236,8 @@ main .sidebar {
   left: 0;
   text-align: left;
   background: rgba(179, 179, 179, 0.5);
-  transition: opacity .25s ease;
-  backdrop-filter: blur(5px);
+  // transition: backdrop-filter .25s ease-in-out;
+  // 
   
 }
 
@@ -261,7 +264,8 @@ main .sidebar {
 }
 
 .modal__inner {
-  transition: top .25s ease;
+  transition: top .09s ease;
+  // Animation
   position: absolute;
   top: -20%;
   right: 0;
@@ -271,7 +275,6 @@ main .sidebar {
   margin: auto;
   overflow: auto;
   background: rgb(255, 255, 255);
-  
   border-radius: 10px;
   padding: 1em 2em;
   height: 90%;
