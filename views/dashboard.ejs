@@ -75,41 +75,45 @@
                     <p>Ongoing Tasks</p>
                     <div class="card-wrapper">
                         <!-- Card here OK -->
-                        <div class="card">
-                            <!-- Span Category-->
-                            <div class="card-row">
-                                <div class="category">
-                                    <span class="task-category">Chilling</span>
-                                </div>
-                                <!-- DROPDOWN MENU FOR CARD :DD -->
-                                <div class="dropdown">
-                                    <!-- <i class="dropbtn fa"></i> -->
-                                    <span class="menu-holder">
-                                        <i class="fal fa-ellipsis-v dropbtn"></i>
-                                    </span>
-                                    <div class="dropdown-content">
-                                        <a href="#">Link 1</a>
-                                        <a href="#">Link 2</a>
-                                        <a href="#">Link 3</a>
+                        <% if(posts.length>1){ %>
+                            <% posts.forEach(post=>{ %>
+                                <!-- for every post found, render its card -->
+                                <div class="card">
+                                    <!-- Span Category-->
+                                    <div class="card-row">
+                                        <div class="category">
+                                            <span class="task-category">Chilling</span>
+                                        </div>
+                                        <!-- DROPDOWN MENU FOR CARD :DD -->
+                                        <div class="dropdown">
+                                            <!-- <i class="dropbtn fa"></i> -->
+                                            <span class="menu-holder">
+                                                <i class="fal fa-ellipsis-v dropbtn"></i>
+                                            </span>
+                                            <div class="dropdown-content">
+                                                <a href="#">Link 1</a>
+                                                <a href="#">Link 2</a>
+                                                <a href="#">Link 3</a>
+                                            </div>
+                                        </div>
                                     </div>
+                                    <!-- Task Title -->
+                                    <h3 class="task-title">
+                                        <!-- EJS Render -->
+                                     <%= post %>
+                                    </h3>
+                                    <!-- Task Subtitle -->
+                                    <h6 class="task-subtitle">
+                                        
+                                    </h6>
+                                    <!-- Task Description -->
+                                    <p class="task-description">
+                                    </p>
+                                    <!-- Task Images (if any open on click) -->
                                 </div>
-                            </div>
-                            <!-- Task Title -->
-                            <h3 class="task-title">
-                                <!-- EJS Render -->
-                                <% if(posts){ %> 
-                             <%= posts[0].title %> 
-                                <% } %> 
-                            </h3>
-                            <!-- Task Subtitle -->
-                            <h6 class="task-subtitle">
-                                
-                            </h6>
-                            <!-- Task Description -->
-                            <p class="task-description">
-                            </p>
-                            <!-- Task Images (if any open on click) -->
-                        </div>
+                          <%  }) %>  
+                      <%  } %> 
+                        
                         
                     </div>
                 </div>

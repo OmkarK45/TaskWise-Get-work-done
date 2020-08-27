@@ -12,7 +12,8 @@ router.get("/", ensureAuthenticated,async (req, res) => {
   try{
       const posts = await Post.find({userID:req.user._id});
       res.render('dashboard',{user:req.user, posts:posts});
-      console.log(posts[0].title)
+      // console.log(posts[0].title)
+      console.log(posts.length)
       // res.json({
       //   user:req.user,
       //   posts:posts
@@ -39,7 +40,7 @@ router.post('/new',ensureAuthenticated,async (req,res)=>{
   });
   try{
       const savedPost = await post.save()
-      res.json({savedPost})
+      // res.json({savedPost})
   }
  catch(err){
   res.json({message:err})
