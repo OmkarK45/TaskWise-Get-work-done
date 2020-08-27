@@ -895,6 +895,8 @@ main .sidebar {
   height: 62vh;
   overflow: scroll;
   padding: 1rem;
+  -webkit-box-shadow: var(--level-1);
+          box-shadow: var(--level-1);
 }
 
 .card {
@@ -904,6 +906,8 @@ main .sidebar {
   padding: 1rem;
   background-color: var(--white);
   border-radius: 10px;
+  -webkit-box-shadow: var(--level-1);
+          box-shadow: var(--level-1);
 }
 
 /*Tag colors & Category Styling*/
@@ -1248,5 +1252,29 @@ button[disabled] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.btn-small {
+  padding: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: white;
+  -webkit-transition: none;
+  transition: none;
+  border: none;
+  font-size: 1rem;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+
+.btn-small:hover {
+  background-color: var(--lightGrey);
+  -webkit-transform: none;
+          transform: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 /*# sourceMappingURL=main.css.map */

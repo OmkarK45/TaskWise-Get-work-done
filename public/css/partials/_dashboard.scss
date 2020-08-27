@@ -204,6 +204,8 @@ main .sidebar {
   height: 62vh;
   overflow: scroll;
   padding: 1rem;
+  box-shadow: var(--level-1);
+
 }
 
 .card{
@@ -213,7 +215,7 @@ main .sidebar {
   padding: 1rem;
   background-color: var(--white);
   border-radius: 10px;
-
+  box-shadow: var(--level-1);
 }
 /*Tag colors & Category Styling*/ 
 .task-category{

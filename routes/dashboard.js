@@ -3,8 +3,8 @@ const router = express.Router();
 const Post = require('../models/Post');
 const User = require('../models/User');
 const {ensureAuthenticated, forwardAuthenticated} = require('../config/auth');
-
 const Joi = require('@hapi/joi');
+
 // PROTECTED HOME PAGE ROUTE
 // router.get('/', forwardAuthenticated, (req, res) => res.send('success'));
 
@@ -12,17 +12,11 @@ router.get("/", ensureAuthenticated,async (req, res) => {
   try{
       const posts = await Post.find({userID:req.user._id});
       res.render('dashboard',{user:req.user, posts:posts});
-      // console.log(posts[0].title)
+      // console.log(`${req.user} has ${posts.length} tasks`)
       console.log(posts)
-      console.log(posts.length)
-      // res.json({
-      //   user:req.user,
-      //   posts:posts
-      // })
-      // res.render('dashboard',{userPost : posts})
   }
   catch(err){
-      res.json({message:err})
+      res.json({err})
   }
   
 });
@@ -81,8 +75,9 @@ router.delete('/:postId', ensureAuthenticated,async (req,res)=>{
   console.log('found a delete request from frontend')
   try{
       const removedPost = await Post.deleteOne({_id:req.params.postId});
+      req.method = 'GET'
       res.redirect('/dashboard')
-  }
+    }
   catch(err){
       res.json({message:err})
   }

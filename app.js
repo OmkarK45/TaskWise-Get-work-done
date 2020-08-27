@@ -45,6 +45,7 @@ app.use((req,res,next)=>{
   res.locals.error = req.flash('error');
   next();
 })
+
 // Middlewares (Function that execute when routes are hit)
 app.use('/posts', postRoute);
 app.use('/user',authRoute);

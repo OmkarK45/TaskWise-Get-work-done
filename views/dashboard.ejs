@@ -75,7 +75,7 @@
                     <p>Ongoing Tasks</p>
                     <div class="card-wrapper">
                         <!-- Card here OK -->
-                        <% if(posts.length>1){ %>
+                        <% if(posts.length>0){ %>
                             <% posts.forEach(post=>{ %>
                                 <!-- for every post found, render its card -->
                                 <div class="card">
@@ -91,12 +91,21 @@
                                                 <i class="fal fa-ellipsis-v dropbtn"></i>
                                             </span>
                                             <div class="dropdown-content">
-                                                <a href="#"><span style="margin-right: 2rem;"><i class="fad fa-edit"></i></span>Edit</a>
-                                                <a href=""><span style="margin-right: 2rem;"><i class="fad fa-trash-alt"></i></span>Delete</a>
-                                                <form method="POST" action="/dashboard/<%=post._id%>?_method=DELETE">
-                                                    <button type="submit">Delete resource</button>
+
+                                                <!-- EDIT FUNCTION -->
+                                                <form method="POST" action="">
+                                                    <button class="btn-small" type="submit"><span><i class="fad fa-edit"></i></span>Edit</button>
                                                   </form>
-                                                <a href="#"><span style="margin-right: 2rem;"><i class="fad fa-arrows"></i></span>Move</a>
+                                               
+                                                <!-- Delete function -->
+                                                <form method="POST" action="/dashboard/<%=post._id%>?_method=DELETE">
+                                                    <button class="btn-small" type="submit"><span><i class="fad fa-trash-alt"></i></span>Delete</button>
+                                                  </form>
+                                                
+                                                <!-- Move Function -->
+                                                <form method="POST" action="">
+                                                    <button class="btn-small" type="submit"><span><i class="fad fa-arrows"></i></span>Move</button>
+                                                  </form>
                                             </div>
                                         </div>
                                     </div>
