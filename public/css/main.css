@@ -1066,6 +1066,8 @@ main .sidebar {
           box-shadow: var(--level-1);
   z-index: 4;
   overflow: hidden;
+  -webkit-transition: display 0.2s ease-in-out;
+  transition: display 0.2s ease-in-out;
 }
 
 /* Links inside the dropdown */

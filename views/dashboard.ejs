@@ -92,7 +92,10 @@
                                             </span>
                                             <div class="dropdown-content">
                                                 <a href="#"><span style="margin-right: 2rem;"><i class="fad fa-edit"></i></span>Edit</a>
-                                                <a href="#"><span style="margin-right: 2rem;"><i class="fad fa-trash-alt"></i></span>Delete</a>
+                                                <a href=""><span style="margin-right: 2rem;"><i class="fad fa-trash-alt"></i></span>Delete</a>
+                                                <form method="POST" action="/dashboard/<%=post._id%>?_method=DELETE">
+                                                    <button type="submit">Delete resource</button>
+                                                  </form>
                                                 <a href="#"><span style="margin-right: 2rem;"><i class="fad fa-arrows"></i></span>Move</a>
                                             </div>
                                         </div>
@@ -110,7 +113,7 @@
                                     <!-- Task Description -->
                                     <p class="task-description">
                                         <%= post.description %>
-
+                                        <%= post._id %> 
                                     </p>
                                     <!-- Task Images (if any open on click) -->
                                 </div>

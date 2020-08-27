@@ -13,6 +13,7 @@ router.get("/", ensureAuthenticated,async (req, res) => {
       const posts = await Post.find({userID:req.user._id});
       res.render('dashboard',{user:req.user, posts:posts});
       // console.log(posts[0].title)
+      console.log(posts)
       console.log(posts.length)
       // res.json({
       //   user:req.user,
@@ -77,8 +78,10 @@ router.post('/search/:query', ensureAuthenticated,async(req,res)=>{
 
 // Delete a specific post
 router.delete('/:postId', ensureAuthenticated,async (req,res)=>{
+  console.log('found a delete request from frontend')
   try{
       const removedPost = await Post.deleteOne({_id:req.params.postId});
+      res.redirect('/dashboard')
   }
   catch(err){
       res.json({message:err})
