@@ -28,6 +28,8 @@ router.get("/", ensureAuthenticated,async (req, res) => {
 
 
 router.post('/new',ensureAuthenticated,async (req,res)=>{
+  // const obj = JSON.parse(JSON.stringify(req.body));
+  // console.log(obj)
   const post = new Post({
       title:req.body.title,
       description:req.body.description,
@@ -40,7 +42,8 @@ router.post('/new',ensureAuthenticated,async (req,res)=>{
   });
   try{
       const savedPost = await post.save()
-      // res.json({savedPost})
+      req.flash('success_msg', 'New task created !')
+      res.redirect('/dashboard')
   }
  catch(err){
   res.json({message:err})

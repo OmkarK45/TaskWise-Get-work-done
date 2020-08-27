@@ -40,3 +40,7 @@
 2. add footer 
 3. work on dashboard today (UI and fix a color scheme)
 
+<!-- Card intents -->
+1. Edit == > ability to change the contents of cards and again post 
+2. Delete == > ability to remove task from database
+3. Move == > Ability to move into other card wrapper

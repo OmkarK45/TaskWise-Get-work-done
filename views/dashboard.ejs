@@ -46,14 +46,14 @@
                         <label class="modal__close" for="modal-1"></label>
                         <h3 class="text-center">Create new task</h3>
                         <!-- Form goes here -->
-                        <form action="/new" method="POST" class="box" id="form">
+                        <form action="/dashboard/new" method="POST" class="box" id="form">
                             <div class="form-control">
                                 <label for="taskname">Task</label>
-                                <input type="text" id="taskTitle" name="taskTitle" placeholder="Task Title">
+                                <input type="text" id="title" name="title" placeholder="Task Title">
                             </div>
                             <div class="form-control">
                                 <label for="tasksub">Subtitle</label>
-                                <input type="text" id="taskSubtitle" name="taskSubtitle" placeholder="Subtitle">
+                                <input type="text" id="subtitle" name="subtitle" placeholder="Subtitle">
                             </div>
                             <div class="form-control">
                                 <label for="taskname">Description</label>
@@ -91,9 +91,9 @@
                                                 <i class="fal fa-ellipsis-v dropbtn"></i>
                                             </span>
                                             <div class="dropdown-content">
-                                                <a href="#">Link 1</a>
-                                                <a href="#">Link 2</a>
-                                                <a href="#">Link 3</a>
+                                                <a href="#"><span style="margin-right: 2rem;"><i class="fad fa-edit"></i></span>Edit</a>
+                                                <a href="#"><span style="margin-right: 2rem;"><i class="fad fa-trash-alt"></i></span>Delete</a>
+                                                <a href="#"><span style="margin-right: 2rem;"><i class="fad fa-arrows"></i></span>Move</a>
                                             </div>
                                         </div>
                                     </div>
