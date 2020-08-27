@@ -5,17 +5,6 @@ const User = require('../models/User');
 const Joi = require('@hapi/joi');
 const {ensureAuthenticated, forwardAuthenticated} = require('../config/auth');
 // Gets all the posts
-router.get("/", ensureAuthenticated,async (req, res) => {
-    try{
-        const posts = await Post.find({userID:req.user._id});
-        res.json(posts);
-        // res.send(req.user);
-    }
-    catch(err){
-        res.json({message:err})
-    }
-    
-});
 
 // Submits a post
 router.post('/',ensureAuthenticated,async (req,res)=>{
@@ -31,7 +20,7 @@ router.post('/',ensureAuthenticated,async (req,res)=>{
     });
     try{
         const savedPost = await post.save()
-        res.json(savedPost);
+        res.json({savedPost})
     }
    catch(err){
     res.json({message:err})

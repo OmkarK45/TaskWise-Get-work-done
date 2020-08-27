@@ -249,6 +249,7 @@ main .sidebar {
   // transition: backdrop-filter .25s ease-in-out;
   // 
   // backdrop-filter: blur(5px);
+  z-index: 99;
 }
 
 .modal__bg {
@@ -258,6 +259,7 @@ main .sidebar {
   bottom: 0;
   left: 0;
   cursor: pointer;
+ 
 }
 
 .modal-state {
@@ -288,6 +290,7 @@ main .sidebar {
   border-radius: 10px;
   padding: 1em 2em;
   height: 90%;
+  z-index: 99;
 }
 
 .modal__close {
@@ -344,6 +347,7 @@ main .sidebar {
 .menu-holder{
   padding: 1rem;
   cursor: pointer;
+
 }
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
