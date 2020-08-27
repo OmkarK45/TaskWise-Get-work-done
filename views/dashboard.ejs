@@ -97,10 +97,13 @@
                             <!-- Task Title -->
                             <h3 class="task-title">
                                 <!-- EJS Render -->
-                             <%= posts %> 
+                                <% if(posts){ %> 
+                             <%= posts[0].title %> 
+                                <% } %> 
                             </h3>
                             <!-- Task Subtitle -->
                             <h6 class="task-subtitle">
+                                
                             </h6>
                             <!-- Task Description -->
                             <p class="task-description">
