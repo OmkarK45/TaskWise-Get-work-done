@@ -450,7 +450,7 @@ nav.navigation ul li {
 .feature-row {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 4rem 0;
+  padding: 2rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -472,17 +472,11 @@ nav.navigation ul li {
           justify-content: center;
 }
 
-.right {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
 .right img {
   display: block;
   margin: 0 auto;
-  width: 80%;
-  padding: 4rem;
+  width: 90%;
+  padding: 3rem;
 }
 
 * {

@@ -126,7 +126,7 @@ nav.navigation{
 .feature-row{
     max-width: 1200px;
     margin: 0 auto;
-    padding: 4rem 0;
+    padding: 2rem 0;
     display: flex;
     justify-content: space-between;
 }
@@ -136,11 +136,10 @@ nav.navigation{
     justify-content: center;
 }
 .right{
-    flex: 1;
     img{
         display: block;
         margin: 0 auto;
-        width: 80%;
-        padding: 4rem;
+        width: 90%;
+        padding: 3rem;
     }
 }
