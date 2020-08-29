@@ -1,6 +1,7 @@
 /*1. Importing SCSS Partials*/
 /*2. Importing Fonts*/
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
 /** WARNING - USE AT OWN RISK */
 /** IT IS AGAINST APPLE'S POLICY TO USE SF PRO FOR ANYTHING OTHER THAN iOS/tvOS/macOS/watchOS DESIGN & DEVELOPMENT */
 /** https://sf.abarba.me/font.css */
@@ -281,13 +282,20 @@
 }
 
 header {
-  padding: 2rem 4rem;
   margin: 0 auto;
-  height: 8vh;
+  height: 10vh;
+  background-color: white;
+  -webkit-box-shadow: var(--level-3);
+          box-shadow: var(--level-3);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 nav.navigation {
   font-family: var(--headingFont);
+  padding: 0.5rem 4rem;
+  position: relative;
   color: var(--neutraldark);
   font-weight: 500;
   max-width: 1200px;
@@ -329,6 +337,15 @@ nav.navigation ul li {
   padding: 0.8rem 1.6rem;
   border-radius: 10px;
   color: var(--neutraldark);
+  -webkit-transition: -webkit-box-shadow 0.1s ease-in-out;
+  transition: -webkit-box-shadow 0.1s ease-in-out;
+  transition: box-shadow 0.1s ease-in-out;
+  transition: box-shadow 0.1s ease-in-out, -webkit-box-shadow 0.1s ease-in-out;
+}
+
+.btnYellow:hover {
+  -webkit-box-shadow: var(--level-3);
+          box-shadow: var(--level-3);
 }
 
 .main {
@@ -336,7 +353,7 @@ nav.navigation ul li {
 }
 
 .hero {
-  height: 100vh;
+  height: 90vh;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -354,7 +371,6 @@ nav.navigation ul li {
 }
 
 .hero h1 {
-  font-family: 'Product Sans',sans-serif;
   font-weight: 900;
   font-size: 5rem;
   color: var(--neutraldark);
@@ -376,12 +392,6 @@ nav.navigation ul li {
   background-color: var(--lightGrey);
   padding: 0.5rem 1rem;
   border-radius: 10px;
-  -webkit-transition: -webkit-transform 0.1s ease-in-out;
-  transition: -webkit-transform 0.1s ease-in-out;
-  transition: transform 0.1s ease-in-out;
-  transition: transform 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
-  -webkit-box-shadow: var(--level-1);
-          box-shadow: var(--level-1);
 }
 
 .btn-semiDark {
@@ -412,17 +422,44 @@ nav.navigation ul li {
 }
 
 .section2 {
-  margin: 5rem auto;
+  background-color: white;
+  width: 100%;
 }
 
-.section2 .right img {
-  display: block;
+.landing-text-light {
+  opacity: 0.3;
+  font-family: var(--headingFont);
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #081724;
+}
+
+.landing-text-header {
+  font-weight: 700;
+  color: #122e46;
+  margin: 1rem 0;
+}
+
+.landing-subtext {
+  opacity: 0.4;
+  font-family: var(--headingFont);
+  font-weight: 500;
+  color: #122e46;
+}
+
+.feature-row {
+  max-width: 1200px;
   margin: 0 auto;
-  width: 90%;
+  padding: 4rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.section2 .left {
-  padding: 5rem;
+.left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -433,18 +470,19 @@ nav.navigation ul li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.section2 .left h1 {
-  font-family: 'Product Sans';
+.right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
-.section2 .left p {
-  text-align: left;
-  margin-top: 2rem;
+.right img {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  padding: 4rem;
 }
 
 * {
@@ -1144,7 +1182,7 @@ main .sidebar {
   /* Styles */
   --line:solid 1px var(--lineColor);
   /* Type */
-  --headingFont:'Product Sans', sans-serif;
+  --headingFont:'Quicksand', sans-serif;
   --bodyFont:"Inter", sans-serif;
   --baseFontSize:100%;
   --h1:3.052em;

@@ -1,11 +1,16 @@
 header{
-    padding: 2rem 4rem;
     margin: 0 auto;
-    height: 8vh;
-    
+    height: 10vh;
+    background-color: white;
+    box-shadow: var(--level-3);
+    position: sticky;
+    top: 0;
 }
 nav.navigation{
     font-family: var(--headingFont);
+    padding: 0.5rem 4rem;
+    position: relative;
+    // border: 2px solid red;
     color: var(--neutraldark);
     font-weight: 500;
     max-width: 1200px;
@@ -33,12 +38,17 @@ nav.navigation{
     padding: 0.8rem 1.6rem;
     border-radius: 10px;
     color: var(--neutraldark);
+    transition: box-shadow 0.1s ease-in-out;
+}
+.btnYellow:hover{
+    box-shadow: var(--level-3);
 }
 .main{
     background-image: url('../../img/Waimakariri.svg');
+    // overflow: hidden;
 }
 .hero{
-    height: 100vh;
+    height: 90vh;
     // background-color: lightgreen;
     background-size: cover;
     display: flex;
@@ -46,7 +56,6 @@ nav.navigation{
     align-items: center;
     justify-content: center;
     h1{
-        font-family: 'Product Sans',sans-serif;
         font-weight: 900;
         font-size: 5rem;
         color: var(--neutraldark);
@@ -61,15 +70,14 @@ nav.navigation{
 .btn-dark{
     background-color: var(--darkBlue);
     color: var(--lightGrey);
-    margin-right:2rem ;
-    
+    margin-right:2rem ;  
 }
 .btn-light{
     background-color: var(--lightGrey);
     padding: 0.5rem 1rem;
     border-radius: 10px;
-    transition: transform 0.1s ease-in-out;
-    box-shadow: var(--level-1);
+    // transition: transform 0.1s ease-in-out;
+    // box-shadow: var(--level-1);
 }
 .btn-semiDark{
     background-color:#2A4FD7;
@@ -86,4 +94,53 @@ nav.navigation{
 }
 .btn-wrapper{
     display: flex;
+}
+
+// Section2
+.section2{
+    background-color: white;
+    width: 100%;
+}
+.landing-text-light {
+    opacity: 0.3;
+    font-family: var(--headingFont);
+    // font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(8, 23, 36);
+}
+
+.landing-text-header {
+    font-weight: 700;
+    color: rgb(18, 46, 70);
+    margin: 1rem 0;
+}
+.landing-subtext {
+    opacity: 0.4;
+    // font-size: 16px;
+    font-family: var(--headingFont);
+
+    font-weight: 500;
+    color: rgb(18, 46, 70);
+}
+.feature-row{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.right{
+    flex: 1;
+    img{
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        padding: 4rem;
+    }
 }

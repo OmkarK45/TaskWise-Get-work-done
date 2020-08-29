@@ -1,9 +1,9 @@
 /*1. Importing SCSS Partials*/
 /*2. Importing Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
 @import 'partials/font';
 @import 'partials/landing';
-@import 'partials/section2';
 @import 'partials/login';
 @import 'partials/register';
 @import 'partials/dashboard';
@@ -47,7 +47,7 @@
     --line:solid 1px var(--lineColor);
 
     /* Type */
-    --headingFont:'Product Sans', sans-serif;
+    --headingFont:'Quicksand', sans-serif;
     --bodyFont:"Inter", sans-serif;
     --baseFontSize:100%;
     --h1:3.052em;
