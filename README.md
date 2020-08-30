@@ -3,6 +3,15 @@ TaskWise is a fullstack CRUD Application built upon NodeJS, MongoDB, Express, EJ
 
 # Wanna try on local machine ?
 Simply clone and open in your favorite editor and type <code> npm install </code>
+create a file named '.env' in root and put your MongoDB atlas/localhost URI
+<code>
+DB_CONNECTION = {URL for MongoDB Atlas}
+
+DB_CONNECTION_LOCAL = mongodb://localhost/{someDBName}
+
+
+SESSION_SECRET = Anything you wish
+</code>
 
 # Known Issues : 
 - Frontend form validation doesn't display alerts properly. 
