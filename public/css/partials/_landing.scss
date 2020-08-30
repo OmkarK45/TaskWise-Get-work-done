@@ -181,3 +181,10 @@ header{
     display: flex;
     // justify-content: space-between;
 }
+
+footer{
+    border: 1px solid red;
+    background-image: url('/img/1.png');
+    background-color: var(--neutraldark);
+    color: var(--lightGrey);
+}
