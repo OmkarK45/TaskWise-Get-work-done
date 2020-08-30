@@ -281,52 +281,53 @@
   src: url("https://sf.abarba.me/SFMono-SemiboldItalic.otf");
 }
 
-header {
-  margin: 0 auto;
-  height: 10vh;
-  background-color: white;
-  -webkit-box-shadow: var(--level-3);
-          box-shadow: var(--level-3);
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+/*FOR NAVIGATION*/
+/* custom non-Tailwind CSS */
+@media (max-width: 576px) {
+  .content {
+    padding-top: 51px;
+  }
 }
 
-nav.navigation {
-  font-family: var(--headingFont);
-  padding: 0.5rem 4rem;
-  position: relative;
-  color: var(--neutraldark);
-  font-weight: 500;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+#site-menu {
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
-nav.navigation ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+#top {
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
-nav.navigation ul li {
-  font-size: 1.1rem;
+@media (min-width: 577px) {
+  .pt-scroll {
+    padding-top: 51px;
+  }
+  .nav-sticky {
+    position: fixed !important;
+    min-width: 100%;
+    top: 0;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    -webkit-transition: all .25s ease-in;
+    transition: all .25s ease-in;
+    z-index: 1;
+  }
+}
+
+/* HAMBURGER MENU */
+.hamburger {
   cursor: pointer;
-  margin: 0 2rem;
-  list-style: none;
+  padding: 0.5rem 1rem;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
 }
 
+.hamburger:hover [class*="-bun"] {
+  background: #333;
+}
+
+/*FOR NAVIGATION ENDS*/
 .logo {
   color: black;
   font-family: inherit;

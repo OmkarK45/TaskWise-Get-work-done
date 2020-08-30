@@ -1,66 +1,30 @@
-// document.addEventListener('DOMContentLoaded', function () {
-// const form = document.getElementById("form");
+var nav = document.getElementById('site-menu');
+var header = document.getElementById('top');
 
-// form.addEventListener("submit", (e) => {
-//   e.preventDefault();
+window.addEventListener('scroll', function() {
+  if (window.scrollY >=400) { // adjust this value based on site structure and header image height
+    nav.classList.add('nav-sticky');
+    header.classList.add('pt-scroll');
+  } else {
+    nav.classList.remove('nav-sticky');
+    header.classList.remove('pt-scroll');
+  }
+});
 
-//   const name = form["name"].value;
-//   const email = form["email"].value;
-//   const password = form['password'].value;
-
-//   if (name === "") {
-//     addErrorTo('name', 'First Name is required'); 
-//   }else{
-//     removeErrorFrom('name');
-//   }
-
-//   if (email === '') {
-//     addErrorTo('email', 'Email is required'); 
-//   }else if(!isValid(email)){
-//     addErrorTo('email', 'Email is not valid'); 
-//   }
-//   else{
-//     removeErrorFrom('email');
-//   }
-
-//   if (password === "") {
-//     addErrorTo('password', 'Password is required'); 
-//   }else if(password.length<6){
-//       addErrorTo('password','Password length must be more that 6')
-//   }
-//   else{
-//     removeErrorFrom('password');
-//   }
-// });
-
-// function addErrorTo(field, message){
-//   const small = form[field].parentNode.querySelector("small");
-//   small.textContent = message;
-//   small.style.opacity = 1;
-// }
-
-
-// function isValid(email) {
-//   const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-//   return re.test(String(email).toLowerCase());
-// }
-// function removeErrorFrom(field){
-//   const small = form[field].parentNode.querySelector("small");
-//   small.style.opacity = 0;
-// }
-// })
-// var mini = true;
-
-// function toggleSidebar() {
-//   if (mini) {
-//     console.log("opening sidebar");
-//     document.getElementById("mySidebar").style.width = "250px";
-//     document.querySelector(".main-section").style.marginLeft = "250px";
-//     this.mini = false;
-//   } else {
-//     console.log("closing sidebar");
-//     document.getElementById("mySidebar").style.width = "85px";
-//     document.querySelector(".main-section").style.marginLeft = "85px";
-//     this.mini = true;
-//   }
-// }
+function navToggle() {
+        var btn = document.getElementById('menuBtn');
+        var nav = document.getElementById('menu');
+        var menuIcon = document.getElementById('menuIcon');
+        if(menuIcon.classList.contains('fa-bars')){
+            console.log('Yes Bars');
+            menuIcon.classList.remove('fa-bars');
+            menuIcon.classList.add('fa-times');
+          }else{
+            menuIcon.classList.add('fa-bars');
+            menuIcon.classList.remove('fa-times');
+          }
+        btn.classList.toggle('open');
+        nav.classList.toggle('flex');
+        nav.classList.toggle('items-center');
+        nav.classList.toggle('hidden');
+    }

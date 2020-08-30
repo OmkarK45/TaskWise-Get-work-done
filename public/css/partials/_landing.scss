@@ -1,34 +1,81 @@
-header{
-    margin: 0 auto;
-    height: 10vh;
-    background-color: white;
-    box-shadow: var(--level-3);
-    position: sticky;
-    top: 0;
-}
-nav.navigation{
-    font-family: var(--headingFont);
-    padding: 0.5rem 4rem;
-    position: relative;
-    // border: 2px solid red;
-    color: var(--neutraldark);
-    font-weight: 500;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    ul{
-        display: flex;
-        align-items: center;
-        li{
-            font-size: 1.1rem;
-            cursor: pointer;
-            margin: 0 2rem;
-            list-style: none;
-        }
+// header{
+//     margin: 0 auto;
+//     height: 10vh;
+//     background-color: white;
+//     box-shadow: var(--level-3);
+//     position: sticky;
+//     top: 0;
+// }
+// nav.navigation{
+//     font-family: var(--headingFont);
+//     padding: 0.5rem 4rem;
+//     position: relative;
+//     // border: 2px solid red;
+//     color: var(--neutraldark);
+//     font-weight: 500;
+//     max-width: 1200px;
+//     margin: 0 auto;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     ul{
+//         display: flex;
+//         align-items: center;
+//         li{
+//             font-size: 1.1rem;
+//             cursor: pointer;
+//             margin: 0 2rem;
+//             list-style: none;
+//         }
+//     }
+// }
+
+/*FOR NAVIGATION*/
+/* custom non-Tailwind CSS */
+
+@media (max-width: 576px) {
+    .content {
+        padding-top: 51px;
     }
 }
+#site-menu{
+    transition: all 0.25s ease-in-out;
+}
+#top{
+    transition: all 0.25s ease-in-out;
+
+}
+@media (min-width: 577px) {
+  .pt-scroll {
+    padding-top: 51px;
+  }
+
+  .nav-sticky {
+    position: fixed!important;
+    min-width: 100%;
+    top: 0;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+    transition: all .25s ease-in;
+    z-index: 1;
+  }
+}
+
+/* HAMBURGER MENU */
+
+.hamburger {
+  cursor: pointer;
+//   width: 48px;
+//   height: 48px;
+    padding: 0.5rem 1rem;
+  transition: all 0.25s;
+}
+
+.hamburger:hover [class*="-bun"] {
+  background: #333;
+}
+
+/*FOR NAVIGATION ENDS*/  
+
 .logo{
     color: black;
    font-family: inherit;

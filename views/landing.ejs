@@ -1,8 +1,8 @@
 <%- include('partials/header') %>
 <section class="main">
-  <header>
+  <!-- <header>
     <nav class="navigation">
-      <!-- Logo goes here -->
+     
       <h3 class="logo">InTask</h3>
       <ul>
             <li>Explore</li>
@@ -10,7 +10,24 @@
             <li class="btnYellow"><a href="user/register">Signup</a></li>
         </ul>
     </nav>
+  </header> -->
+  <!--  -->
+  <header id="top" class="w-full flex flex-col fixed sm:relative bg-white pin-t pin-r pin-l">
+    <nav id="site-menu" class="flex flex-col sm:flex-row w-full justify-between items-center px-4 sm:px-6 py-1 bg-white shadow sm:shadow-none">
+      <div class="w-full  sm:w-auto self-start sm:self-center flex flex-row sm:flex-none flex-no-wrap justify-between items-center py-3">
+        <a href="#" class="no-underline py-1"><h3>InTask</h3></a>
+        <button id="menuBtn" class="hamburger block sm:hidden focus:outline-none open" type="button" onclick="navToggle();">
+          <i id="menuIcon" class="fas fa-bars"></i>
+        </button>
+      </div>
+      <div id="menu" class=" sm:w-auto self-start sm:self-center sm:flex flex-col sm:flex-row items-center h-full py-1 pb-4 sm:py-0 sm:pb-0 hidden">
+        <a class=" hover:text-red text-lg no-underline sm:w-auto sm:pr-4 mx-2 py-2 sm:py-1 sm:pt-2" href="#" target="_blank">Explore</a>
+        <a class=" hover:text-red text-lg no-underline sm:w-auto sm:pr-4 mx-2 py-2 sm:py-1 sm:pt-2" href="user/login" target="_blank">Login</a>
+        <a class=" btnYellow hover:text-red text-lg no-underline  mx-2 sm:px-4 py-2 sm:py-1 sm:pt-2" href="user/register">Sign Up</a>
+      </div>
+    </nav>
   </header>
+  <!--  -->
       <section class="hero">
         <h1>Manage Your Tasks.</h1>
         <p>Get ahead of your deadlines by working in a proper way with InTask. Create, manage and track your progress of tasks only using secured platform InTask.</p>
@@ -25,7 +42,7 @@
 <section class="section2 features-content">
   <div class="container feature-row flex flex-wrap">
     <div class=" w-full md:w-full sm:w-full lg:w-1/2">
-      <p class="landing-text-light text-center"><i class="fas fa-bolt" style="margin-right: 0.5rem;"></i> Supercharge your notes</p>
+      <p class="landing-text-light lg:text-left text-center"><i class="fas fa-bolt" style="margin-right: 0.5rem;"></i> Supercharge your notes</p>
       <h3 class="landing-text-header lg:text-left sm:text-center">Save and manage your notes</h3>
       <p class="landing-subtext">With easy interface, it's a seconds work to create and save your notes/tasks in our secured cloud platform powered by MongoDB®. Retrieving notes is as easy as logging in !</p>
     </div>
@@ -39,7 +56,7 @@
 <section class="section2 features-content">
   <div class="container feature-row flex flex-wrap">
     <div class=" w-full md:w-full sm:w-full lg:w-1/2">
-      <p class="landing-text-light text-center"><i class="fas fa-users" style="margin-right: 0.5rem;"></i> Upgrade the team game</p>
+      <p class="landing-text-light lg:text-left text-center"><i class="fas fa-users" style="margin-right: 0.5rem;"></i> Upgrade the team game</p>
       <h3 class="landing-text-header lg:text-left sm:text-center">Find people and collaborate</h3>
       <p class="landing-subtext">Connect with your team rightaway and collaborate like never before. This feature is coming soon.</p>
     </div>
@@ -54,7 +71,7 @@
 <section class="section2 features-content">
   <div class="container feature-row flex flex-wrap">
     <div class="w-full sm:w-full md:w-full lg:w-1/2">
-      <p class="landing-text-light text-center"><i class="fas fa-bolt" style="margin-right: 0.5rem;"></i> Supercharge your notes</p>
+      <p class="landing-text-light lg:text-left text-center"><i class="fas fa-bolt" style="margin-right: 0.5rem;"></i> Supercharge your notes</p>
       <h3 class="landing-text-header lg:text-left sm:text-center">Save and manage your notes</h3>
       <p class="landing-subtext">With easy interface, it's a seconds work to create and save your notes/tasks in our secured cloud platform powered by MongoDB®. Retrieving notes is as easy as logging in !</p>
     </div>
