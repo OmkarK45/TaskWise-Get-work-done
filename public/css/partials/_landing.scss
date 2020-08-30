@@ -124,23 +124,10 @@ nav.navigation{
     color: rgb(18, 46, 70);
 }
 .feature-row{
-    max-width: 1200px;
+    // max-width: 1200px;
     // border: 1px solid red;
     margin: 0 auto;
     padding: 0.5rem 0;
     display: flex;
-    justify-content: space-between;
-}
-.left{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.right{
-    img{
-        display: block;
-        margin: 0 auto;
-        width: 90%;
-        padding: 3rem;
-    }
+    // justify-content: space-between;
 }
