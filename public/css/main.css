@@ -448,35 +448,11 @@ nav.navigation ul li {
 }
 
 .feature-row {
-  max-width: 1200px;
   margin: 0 auto;
   padding: 0.5rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.left {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.right img {
-  display: block;
-  margin: 0 auto;
-  width: 90%;
-  padding: 3rem;
 }
 
 * {
@@ -1280,6 +1256,7 @@ button[disabled] {
 
 .container {
   max-width: 1200px;
+  max-width: 80%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
