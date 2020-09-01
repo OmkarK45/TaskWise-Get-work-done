@@ -41,10 +41,10 @@ header{
     }
 }
 #site-menu{
-    transition: all 0.25s ease-in-out;
+    transition: top 0.5s ease-in-out;
 }
 #top{
-    transition: all 0.25s ease-in-out;
+    transition: top 0.25s ease-in-out;
 
 }
 @media (min-width: 577px) {
@@ -57,7 +57,7 @@ header{
     min-width: 100%;
     top: 0;
     box-shadow: var(--level-3);
-    transition: all .25s ease-in;
+    transition: top .25s ease-in;
     z-index: 1;
   }
 }
@@ -94,6 +94,8 @@ header{
 }
 .main{
     background-image: url('../../img/Waimakariri.svg');
+    background-attachment: fixed;
+
     // overflow: hidden;
 }
 .hero{

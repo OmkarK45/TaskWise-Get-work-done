@@ -295,13 +295,13 @@ header {
 }
 
 #site-menu {
-  -webkit-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
+  -webkit-transition: top 0.5s ease-in-out;
+  transition: top 0.5s ease-in-out;
 }
 
 #top {
-  -webkit-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
+  -webkit-transition: top 0.25s ease-in-out;
+  transition: top 0.25s ease-in-out;
 }
 
 @media (min-width: 577px) {
@@ -314,8 +314,8 @@ header {
     top: 0;
     -webkit-box-shadow: var(--level-3);
             box-shadow: var(--level-3);
-    -webkit-transition: all .25s ease-in;
-    transition: all .25s ease-in;
+    -webkit-transition: top .25s ease-in;
+    transition: top .25s ease-in;
     z-index: 1;
   }
 }
@@ -356,6 +356,7 @@ header {
 
 .main {
   background-image: url("../../img/Waimakariri.svg");
+  background-attachment: fixed;
 }
 
 .hero {

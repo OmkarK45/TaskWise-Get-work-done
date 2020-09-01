@@ -44,3 +44,11 @@
 1. Edit == > ability to change the contents of cards and again post 
 2. Delete == > ability to remove task from database
 3. Move == > Ability to move into other card wrapper
+
+<!-- Nice gradient -->
+linear-gradient(141deg, #5d2cb9 0%, #8E51C7 71%, #ae5fd2 100%)
+nice color
+hero.is-warning {
+    background-color: #ffdd57;
+    color: rgba(0,0,0,0.7);
+}
