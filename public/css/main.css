@@ -282,6 +282,26 @@
 }
 
 /*FOR NAVIGATION*/
+.logo {
+  position: relative;
+}
+
+.logo h3 {
+  font-weight: 700;
+}
+
+.logo::after {
+  content: 'BETA';
+  font-size: 0.7rem;
+  position: absolute;
+  background-color: var(--light-blue);
+  color: white;
+  padding: 0.1rem 0.5rem;
+  border-radius: 15px;
+  top: 0;
+  left: 112px;
+}
+
 /* custom non-Tailwind CSS */
 header {
   -webkit-box-shadow: var(--level-1);
