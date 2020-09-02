@@ -299,6 +299,12 @@ header {
   transition: all 0.5s ease-in-out;
 }
 
+#site-menu a {
+  font-family: var(--headingFont);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
 #top {
   -webkit-transition: top 0.25s ease-in-out;
   transition: top 0.25s ease-in-out;
@@ -439,11 +445,17 @@ header {
 }
 
 .landing-text-light {
-  opacity: 0.5;
   font-family: var(--headingFont);
+  background-color: var(--darkBlue);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.2rem 1rem;
+  border-radius: 10px;
   font-weight: bold;
   text-transform: uppercase;
   color: #081724;
+  color: white;
 }
 
 .landing-text-header {
@@ -526,6 +538,16 @@ footer .last h5 {
 
 .card-grid {
   margin-top: 5rem;
+}
+
+.yellow-bg {
+  background-color: #ffdd57;
+}
+
+.last-btn {
+  font-size: 1.3rem;
+  font-family: var(--headingFont);
+  font-weight: 600;
 }
 
 * {
