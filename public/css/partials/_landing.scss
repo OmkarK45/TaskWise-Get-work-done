@@ -172,8 +172,16 @@ footer{
     background-color: var(--neutraldark);
     // background-color: #183153;
     color: var(--lightGrey);
+    a{
+        font-family: var(--headingFont);
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
     .last{
         background-color: #001C40;
+        h5{
+            font-weight: 600;
+        }
     }
 }
 .features{
