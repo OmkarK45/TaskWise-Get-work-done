@@ -1,15 +1,15 @@
 var nav = document.getElementById('site-menu');
 var header = document.getElementById('top');
 
-window.addEventListener('scroll', function() {
-  if (window.scrollY >=400) { // adjust this value based on site structure and header image height
-    nav.classList.add('nav-sticky');
-    header.classList.add('pt-scroll');
-  } else {
-    nav.classList.remove('nav-sticky');
-    header.classList.remove('pt-scroll');
-  }
-});
+// window.addEventListener('scroll', function() {
+//   if (window.scrollY >=400) { // adjust this value based on site structure and header image height
+//     nav.classList.add('nav-sticky');
+//     header.classList.add('pt-scroll');
+//   } else {
+//     nav.classList.remove('nav-sticky');
+//     header.classList.remove('pt-scroll');
+//   }
+// });
 
 function navToggle() {
         var btn = document.getElementById('menuBtn');
