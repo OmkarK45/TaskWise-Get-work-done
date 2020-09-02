@@ -432,7 +432,7 @@ header {
 }
 
 .landing-text-light {
-  opacity: 0.3;
+  opacity: 0.5;
   font-family: var(--headingFont);
   font-weight: bold;
   text-transform: uppercase;
@@ -441,15 +441,14 @@ header {
 
 .landing-text-header {
   font-weight: 700;
-  color: #122e46;
   margin: 1rem 0;
 }
 
 .landing-subtext {
-  opacity: 0.4;
+  opacity: 0.9;
   font-family: var(--headingFont);
-  font-weight: 500;
-  color: #122e46;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 .feature-row {
@@ -475,7 +474,7 @@ footer {
 }
 
 .features h2 {
-  font-weight: 900;
+  font-weight: 700;
   text-align: center;
 }
 
@@ -486,6 +485,15 @@ footer {
   transition: -webkit-transform 172ms ease-in-out, -webkit-box-shadow 172ms ease-in-out;
   transition: transform 172ms ease-in-out, box-shadow 172ms ease-in-out;
   transition: transform 172ms ease-in-out, box-shadow 172ms ease-in-out, -webkit-transform 172ms ease-in-out, -webkit-box-shadow 172ms ease-in-out;
+}
+
+.card2 h4 {
+  font-weight: 700;
+}
+
+.card2 p {
+  font-family: var(--headingFont);
+  font-weight: 600;
 }
 
 .card2:hover {

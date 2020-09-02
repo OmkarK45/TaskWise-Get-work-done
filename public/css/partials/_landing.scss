@@ -123,7 +123,7 @@ header{
     width: 100%;
 }
 .landing-text-light {
-    opacity: 0.3;
+    opacity: 0.5;
     font-family: var(--headingFont);
     // font-size: 12px;
     font-weight: bold;
@@ -133,16 +133,16 @@ header{
 
 .landing-text-header {
     font-weight: 700;
-    color: rgb(18, 46, 70);
+    // color: rgb(18, 46, 70);
     margin: 1rem 0;
 }
 .landing-subtext {
-    opacity: 0.4;
+    opacity: 0.9;
     // font-size: 16px;
     font-family: var(--headingFont);
-
-    font-weight: 500;
-    color: rgb(18, 46, 70);
+    font-size: 1.1rem;
+    font-weight: 600;
+    // color: rgb(18, 46, 70);
 }
 .feature-row{
     // max-width: 1200px;
@@ -163,13 +163,20 @@ footer{
 .features{
     padding: 5rem 0;
     h2{
-        font-weight: 900;
+        font-weight: 700;
         text-align: center;
     }
 }
 .card2{
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.05);
     transition: transform 172ms ease-in-out, box-shadow 172ms ease-in-out;
+    h4{
+        font-weight: 700;
+    }
+    p{
+        font-family: var(--headingFont);
+        font-weight: 600;
+    }
 }
 .card2:hover{
     transform: translateY(-5px);
