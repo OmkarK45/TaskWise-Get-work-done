@@ -470,6 +470,35 @@ footer {
   color: var(--lightGrey);
 }
 
+.features {
+  padding: 5rem 0;
+}
+
+.features h2 {
+  font-weight: 900;
+  text-align: center;
+}
+
+.card2 {
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+  -webkit-transition: -webkit-transform 172ms ease-in-out, -webkit-box-shadow 172ms ease-in-out;
+  transition: -webkit-transform 172ms ease-in-out, -webkit-box-shadow 172ms ease-in-out;
+  transition: transform 172ms ease-in-out, box-shadow 172ms ease-in-out;
+  transition: transform 172ms ease-in-out, box-shadow 172ms ease-in-out, -webkit-transform 172ms ease-in-out, -webkit-box-shadow 172ms ease-in-out;
+}
+
+.card2:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-box-shadow: var(--level-2);
+          box-shadow: var(--level-2);
+}
+
+.card-grid {
+  margin-top: 5rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1193,7 +1222,6 @@ html {
 
 body {
   font-family: var(--bodyFont);
-  background: var(--background);
   color: var(--textColor);
 }
 
