@@ -1,39 +1,8 @@
-// header{
-//     margin: 0 auto;
-//     height: 10vh;
-//     background-color: white;
-//     box-shadow: var(--level-3);
-//     position: sticky;
-//     top: 0;
-// }
-// nav.navigation{
-//     font-family: var(--headingFont);
-//     padding: 0.5rem 4rem;
-//     position: relative;
-//     // border: 2px solid red;
-//     color: var(--neutraldark);
-//     font-weight: 500;
-//     max-width: 1200px;
-//     margin: 0 auto;
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     ul{
-//         display: flex;
-//         align-items: center;
-//         li{
-//             font-size: 1.1rem;
-//             cursor: pointer;
-//             margin: 0 2rem;
-//             list-style: none;
-//         }
-//     }
-// }
 
 /*FOR NAVIGATION*/
 /* custom non-Tailwind CSS */
 header{
-    box-shadow: var(--level-3);
+    box-shadow: var(--level-1);
 }
 @media (max-width: 576px) {
     .content {
@@ -41,8 +10,9 @@ header{
     }
 }
 #site-menu{
-    transition: top 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
+
 #top{
     transition: top 0.25s ease-in-out;
 
@@ -53,12 +23,14 @@ header{
   }
 
   .nav-sticky {
-    position: fixed!important;
+    display: block;
+    position: sticky;
     min-width: 100%;
     top: 0;
-    box-shadow: var(--level-3);
+    box-shadow: var(--level-1);
     transition: top .25s ease-in;
     z-index: 1;
+
   }
 }
 
@@ -92,15 +64,13 @@ header{
 .btnYellow:hover{
     box-shadow: var(--level-3);
 }
-.main{
-    background-image: url('../../img/Waimakariri.svg');
-    background-attachment: fixed;
 
-    // overflow: hidden;
-}
 .hero{
+    // background-image: url('../../img/Waimakariri.svg');
+    // background-attachment: fixed;
     height: 90vh;
-    // background-color: lightgreen;
+    // position: relative;
+    background-color: #fff;
     background-size: cover;
     display: flex;
     flex-direction: column;

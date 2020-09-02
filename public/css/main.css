@@ -284,8 +284,8 @@
 /*FOR NAVIGATION*/
 /* custom non-Tailwind CSS */
 header {
-  -webkit-box-shadow: var(--level-3);
-          box-shadow: var(--level-3);
+  -webkit-box-shadow: var(--level-1);
+          box-shadow: var(--level-1);
 }
 
 @media (max-width: 576px) {
@@ -295,8 +295,8 @@ header {
 }
 
 #site-menu {
-  -webkit-transition: top 0.5s ease-in-out;
-  transition: top 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 #top {
@@ -309,11 +309,13 @@ header {
     padding-top: 51px;
   }
   .nav-sticky {
-    position: fixed !important;
+    display: block;
+    position: -webkit-sticky;
+    position: sticky;
     min-width: 100%;
     top: 0;
-    -webkit-box-shadow: var(--level-3);
-            box-shadow: var(--level-3);
+    -webkit-box-shadow: var(--level-1);
+            box-shadow: var(--level-1);
     -webkit-transition: top .25s ease-in;
     transition: top .25s ease-in;
     z-index: 1;
@@ -354,13 +356,9 @@ header {
           box-shadow: var(--level-3);
 }
 
-.main {
-  background-image: url("../../img/Waimakariri.svg");
-  background-attachment: fixed;
-}
-
 .hero {
   height: 90vh;
+  background-color: #fff;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1138,6 +1136,7 @@ main .sidebar {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /*5. SCSS Root Variables and Color Scheme*/
