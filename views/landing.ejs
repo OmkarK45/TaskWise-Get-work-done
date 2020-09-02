@@ -1,18 +1,5 @@
 <%- include('partials/header') %>
-<section class="main">
-  <!-- <header>
-    <nav class="navigation">
-     
-      <h3 class="logo">InTask</h3>
-      <ul>
-            <li>Explore</li>
-            <li><a href="user/login">Login</a> </li>
-            <li class="btnYellow"><a href="user/register">Signup</a></li>
-        </ul>
-    </nav>
-  </header> -->
-  <!--  -->
-  <header id="top" class="w-full flex flex-col fixed sm:relative bg-white pin-t pin-r pin-l">
+  <header id="top" class="w-full flex nav-sticky flex-col sm:sticky bg-white pin-t pin-r pin-l">
     <nav id="site-menu" class="flex flex-col sm:flex-row w-full justify-between items-center px-4 sm:px-6 py-1 bg-white shadow sm:shadow-none">
       <div class="w-full  sm:w-auto self-start sm:self-center flex flex-row sm:flex-none flex-no-wrap justify-between items-center py-3">
         <a href="#" class="no-underline py-1"><h3>InTask</h3></a>
@@ -21,21 +8,20 @@
         </button>
       </div>
       <div id="menu" class=" sm:w-auto self-start sm:self-center sm:flex flex-col sm:flex-row items-center h-full py-1 pb-4 sm:py-0 sm:pb-0 hidden">
-        <a class=" hover:text-red text-lg no-underline sm:w-auto sm:pr-4 mx-2 py-2 sm:py-1 sm:pt-2" href="#" target="_blank">Explore</a>
-        <a class=" hover:text-red text-lg no-underline sm:w-auto sm:pr-4 mx-2 py-2 sm:py-1 sm:pt-2" href="user/login">Login</a>
-        <a class=" btnYellow hover:text-red text-lg no-underline  mx-2 sm:px-4 py-2 sm:py-1 sm:pt-2" href="user/register">Sign Up</a>
+        <a class="text-lg no-underline sm:w-auto sm:pr-4 mx-2 py-2 sm:py-1 sm:pt-2" href="#" target="_blank">Explore</a>
+        <a class="  text-lg no-underline sm:w-auto sm:pr-4 mx-2 py-2 sm:py-1 sm:pt-2" href="user/login">Login</a>
+        <a class=" btnYellow text-lg no-underline  mx-2 sm:px-4 py-2 sm:py-1 sm:pt-2" href="user/register">Sign Up</a>
       </div>
     </nav>
   </header>
   <!--  -->
-      <section class="hero">
-        <h1>Manage Your Tasks.</h1>
-        <p>Get ahead of your deadlines by working in a proper way with InTask. Create, manage and track your progress of tasks only using secured platform InTask.</p>
-        <div class="btn-wrapper">
-          <button class="btn-dark"><i class="fal fa-telescope"></i> Discover</button>
-          <button class="btn-light"><i class="fal fa-sign-in"></i> <a href="/user/login">Login</a></button>
-        </div>
-      </section>
+<section class="hero">
+  <h1>Manage Your Tasks.</h1>
+  <p>Get ahead of your deadlines by working in a proper way with InTask. Create, manage and track your progress of tasks only using secured platform InTask.</p>
+  <div class="btn-wrapper">
+    <button class="btn-dark"><i class="fal fa-telescope"></i> Discover</button>
+    <button class="btn-light"><i class="fal fa-sign-in"></i> <a href="/user/login">Login</a></button>
+  </div>
 </section>
 
 <!-- Section2 -->
