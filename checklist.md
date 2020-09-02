@@ -52,3 +52,8 @@ hero.is-warning {
     background-color: #ffdd57;
     color: rgba(0,0,0,0.7);
 }
+
+<!-- nice green gradient -->
+ackground-image: linear-gradient(141deg,#009e6c 0,#00d1b2 71%,#00e7eb 100%);
+<!-- Success gradient -->
+background-image: linear-gradient(141deg,#29b342 0,#48c774 71%,#56d296 100%);
