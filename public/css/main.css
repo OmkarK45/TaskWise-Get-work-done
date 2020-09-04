@@ -291,7 +291,7 @@
 }
 
 .logo::after {
-  content: 'BETA';
+  content: "BETA";
   font-size: 0.7rem;
   position: absolute;
   background-color: var(--light-blue);
@@ -343,8 +343,8 @@ header {
     top: 0;
     -webkit-box-shadow: var(--level-1);
             box-shadow: var(--level-1);
-    -webkit-transition: top .25s ease-in;
-    transition: top .25s ease-in;
+    -webkit-transition: top 0.25s ease-in;
+    transition: top 0.25s ease-in;
     z-index: 1;
   }
 }
@@ -385,10 +385,8 @@ header {
 
 .hero {
   background-size: 100%;
-  background-image: url("../../img/bgp3.png");
-  -o-object-fit: auto;
-     object-fit: auto;
-  height: calc(100vh - 20px);
+  background: url("../../img/bgp3.png");
+  height: calc(100vh - 4rem);
   background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -433,7 +431,7 @@ header {
 }
 
 .btn-semiDark {
-  background-color: #2A4FD7;
+  background-color: #2a4fd7;
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 10px;
@@ -446,7 +444,8 @@ header {
   cursor: pointer;
 }
 
-.btn-light:hover, .btn-semiDark:hover {
+.btn-light:hover,
+.btn-semiDark:hover {
   -webkit-box-shadow: var(--level-2);
           box-shadow: var(--level-2);
   -webkit-transform: translateY(-3px);
@@ -515,7 +514,7 @@ footer a {
 }
 
 footer .last {
-  background-color: #001C40;
+  background-color: #001c40;
 }
 
 footer .last h5 {

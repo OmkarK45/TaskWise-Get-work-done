@@ -23,7 +23,6 @@
   padding-top: 60px;
   white-space: nowrap;
 }
-
 .sidebar a {
   padding: 8px 8px 8px 32px;
   padding: 1rem 1rem 1rem 0.8rem;
@@ -40,7 +39,6 @@
     // background-color: green;
   }
 }
-
 .sidebar a:hover {
   background-color: #5145cd;
   color: var(--white);
@@ -56,19 +54,16 @@ main .sidebar {
   font-size: 36px;
   margin-left: 50px;
 }
-
 .fal,
 .icon-text {
   vertical-align: middle;
   // background-color: yellow;
 }
-
 #main {
   padding: 16px;
   margin-left: 85px;
   transition: margin-left 0.5s;
 }
-
 @media screen and (max-height: 450px) {
   .sidebar {
     padding-top: 15px;
@@ -116,7 +111,6 @@ main .sidebar {
 }
 .main-thing-heading{
   // background-color: cyan;
-
   h3{
     padding: 0 3rem;
     // background-color: green;
@@ -152,18 +146,14 @@ main .sidebar {
   background-color: lightblue;
   grid-area: box1;
 }
-
 .box-2{
   background-color: lightgreen;
   grid-area: box2;
-
 }
 .box-3{
   background-color: lightyellow;
   grid-area: box3;
-
 }
-
 .fa-plus-circle{
   background-color: #1B3FC2;
   padding: 0.3rem;
@@ -205,9 +195,7 @@ main .sidebar {
   overflow: scroll;
   padding: 1rem;
   box-shadow: var(--level-1);
-
 }
-
 .card{
   width: 100%;
   margin: 1rem auto;
@@ -254,7 +242,6 @@ main .sidebar {
   // backdrop-filter: blur(5px);
   z-index: 99;
 }
-
 .modal__bg {
   position: absolute;
   top: 0;
@@ -264,20 +251,16 @@ main .sidebar {
   cursor: pointer;
  
 }
-
 .modal-state {
   display: none;
 }
-
 .modal-state:checked + .modal {
   opacity: 1;
   visibility: visible;
 }
-
 .modal-state:checked + .modal .modal__inner {
   top: 0;
 }
-
 .modal__inner {
   transition: top .5s ease;
   // Animation
@@ -295,7 +278,6 @@ main .sidebar {
   height: 90%;
   z-index: 99;
 }
-
 .modal__close {
   position: absolute;
   right: 1em;
@@ -304,7 +286,6 @@ main .sidebar {
   height: 1.1em;
   cursor: pointer;
 }
-
 .modal__close:after,
 .modal__close:before {
   content: '';
@@ -318,16 +299,13 @@ main .sidebar {
   margin: -3px 0 0 -1px;
   top: 0;
 }
-
 .modal__close:hover:after,
 .modal__close:hover:before {
   background: #aaa;
 }
-
 .modal__close:before {
   transform: rotate(-45deg);
 }
-
 @media screen and (max-width: 768px) {
 	
   .modal__inner {
@@ -339,7 +317,6 @@ main .sidebar {
 #add-new{
   margin-left: 2rem;
 }
-
 /*Dropdown*/
 /* Dropdown Button */
 .dropbtn {
@@ -350,14 +327,12 @@ main .sidebar {
 .menu-holder{
   padding: 1rem;
   cursor: pointer;
-
 }
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
   position: relative;
   display: inline-block;
 }
-
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
@@ -372,8 +347,6 @@ main .sidebar {
   overflow: hidden;
   transition: display 0.2s ease-in-out;
 }
-
-
 /* Links inside the dropdown */
 .dropdown-content a {
   color: black;
@@ -381,16 +354,12 @@ main .sidebar {
   text-decoration: none;
   display: block;
 }
-
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {background-color: var(--lightGrey);}
-
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block; }
-
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #e5eeff;}
-
 .card-row{
   display: flex;
   justify-content: space-between;
