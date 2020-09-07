@@ -73,7 +73,7 @@
                         <% if(posts.length>0){ %>
                             <% posts.forEach(post=>{ %>
                                 <!-- for every post found, render its card -->
-                                <div class="card">
+                                <div class="card card2">
                                     <!-- Span Category-->
                                     <div class="card-row">
                                         <div class="category">
@@ -104,14 +104,14 @@
                                         </div>
                                     </div>
                                     <!-- Task Title -->
-                                    <h3 class="task-title">
+                                    <h3 class="task-title text-xl">
                                         <!-- EJS Render -->
                                      <%= post.title %>
                                     </h3>
                                     <!-- Task Subtitle -->
-                                    <h6 class="task-subtitle">
+                                    <h3 class="task-subtitle text-xl">
                                         <%= post.subtitle %>
-                                    </h6>
+                                    </h3>
                                     <!-- Task Description -->
                                     <p class="task-description">
                                         <%= post.description %>

@@ -189,7 +189,7 @@ main .sidebar {
   p{
     color: #000;
     // text-align: center;
-    margin: 1rem 0;
+    margin: 0.6rem 0;
     // font-size: 1.3rem;
     line-height: 1.7;
     letter-spacing: 1px;
@@ -202,7 +202,7 @@ main .sidebar {
   background-color: #ffffff;
   width: 90%;
   border-radius: 10px;
-  height: 62vh;
+  height: 66vh;
   overflow: scroll;
   padding: 1rem;
   box-shadow: var(--level-1);
@@ -219,19 +219,26 @@ main .sidebar {
 /*Tag colors & Category Styling*/ 
 .task-category{
   border-radius: 10px;
-  background-color: var(--lightest-blue);
+  background-color: #63E6BE;
   padding: 0.3rem 0.5rem;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  font-family: var(--headingFont);
+  color: #183153;
+  text-transform: uppercase;
 }
 .task-title{
-  font-size: 1.3rem;
-  margin: 1rem auto;
+  font-size: 1.5rem;
+  margin: 0.6rem auto;
+  font-weight: 500;
 }
 .task-subtitle{
-  font-size: 0.8rem;
+  color: rgb(155, 155, 155);
+  font-size: 1.2rem;
 }
 .task-description{
-  font-size:0.9rem;
+  font-size:1rem;
+  font-weight: 300;
 }
 ::-webkit-scrollbar {
   width: 5px;
@@ -371,7 +378,7 @@ main .sidebar {
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {background-color: var(--lightGrey);}
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block; }
+.dropdown:hover .dropdown-content {display: block;  }
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: #e5eeff;}
 .card-row{
