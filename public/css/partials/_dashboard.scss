@@ -10,7 +10,7 @@
 }
 .sidebar {
   height: 100%;
-  width: 85px;
+  // width: 85px;
   width: 250px;
   // position: fixed;
   z-index: 1;
@@ -18,21 +18,24 @@
   left: 0;
   background-color: var(--neutralLight);
   background-color: #ffffff;
+  background-color: #477167;
   transition: 0.5s;
   overflow-x: hidden;
   padding-top: 60px;
   white-space: nowrap;
 }
 .sidebar a {
-  padding: 8px 8px 8px 32px;
-  padding: 1rem 1rem 1rem 0.8rem;
+  // padding: 8px 8px 8px 32px;
+  // padding: 1rem 1rem 1rem 0.8rem;
+  margin: 1rem 1rem;
   text-decoration: none;
   font-size: 25px;
   color: var(--neutralDark);
+  color: white;
   border-radius: 5px;
   display: block;
   transition: background-color 0.1s ease-in-out;
-  margin: 0 1rem;
+  // margin: 0 1rem;
   .far {
     opacity: 0.6;
     padding: 1rem;
@@ -40,11 +43,11 @@
   }
 }
 .sidebar a:hover {
-  background-color: #5145cd;
+  background-color: #3f6259;
   color: var(--white);
 }
 .sidebar a:active {
-  background-color: #362f78;
+  background-color: #3f6259;
   color: var(--white);
 }
 main .sidebar {
@@ -56,6 +59,10 @@ main .sidebar {
 }
 .fal,
 .icon-text {
+  font-family: var(--headingFont);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
   vertical-align: middle;
   // background-color: yellow;
 }
@@ -82,6 +89,7 @@ main .sidebar {
   justify-content: space-between;
   align-items: center;
   background-color: white;
+  border-bottom: 1px solid var(--grey);
 }
 .search-bar{
   display: flex;
@@ -105,16 +113,16 @@ main .sidebar {
   }
 }
 .main-thing{
-  background-color: #F2F6FF;
+  background-color: #ffffff;
   padding: 1rem 1rem;
   border-radius: 25px;
+  padding-top: 0;
 }
 .main-thing-heading{
   // background-color: cyan;
-  h3{
-    padding: 0 3rem;
-    // background-color: green;
-  }
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--grey);
 }
 /*Main styling*/
 .work-blocks{
@@ -188,7 +196,7 @@ main .sidebar {
 .card-wrapper{
   background-color: var(--neutralLight);
   background-color: #e5eeff;
-  background-color: #ecf3ff;
+  background-color: #ffffff;
   width: 90%;
   border-radius: 10px;
   height: 62vh;

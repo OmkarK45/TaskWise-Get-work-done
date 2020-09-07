@@ -787,13 +787,13 @@ label {
 
 .sidebar {
   height: 100%;
-  width: 85px;
   width: 250px;
   z-index: 1;
   top: 0;
   left: 0;
   background-color: var(--neutralLight);
   background-color: #ffffff;
+  background-color: #477167;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   overflow-x: hidden;
@@ -802,16 +802,15 @@ label {
 }
 
 .sidebar a {
-  padding: 8px 8px 8px 32px;
-  padding: 1rem 1rem 1rem 0.8rem;
+  margin: 1rem 1rem;
   text-decoration: none;
   font-size: 25px;
   color: var(--neutralDark);
+  color: white;
   border-radius: 5px;
   display: block;
   -webkit-transition: background-color 0.1s ease-in-out;
   transition: background-color 0.1s ease-in-out;
-  margin: 0 1rem;
 }
 
 .sidebar a .far {
@@ -820,12 +819,12 @@ label {
 }
 
 .sidebar a:hover {
-  background-color: #5145cd;
+  background-color: #3f6259;
   color: var(--white);
 }
 
 .sidebar a:active {
-  background-color: #362f78;
+  background-color: #3f6259;
   color: var(--white);
 }
 
@@ -839,6 +838,10 @@ main .sidebar {
 
 .fal,
 .icon-text {
+  font-family: var(--headingFont);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
   vertical-align: middle;
 }
 
@@ -875,6 +878,7 @@ main .sidebar {
       -ms-flex-align: center;
           align-items: center;
   background-color: white;
+  border-bottom: 1px solid var(--grey);
 }
 
 .search-bar {
@@ -913,13 +917,20 @@ main .sidebar {
 }
 
 .main-thing {
-  background-color: #F2F6FF;
+  background-color: #ffffff;
   padding: 1rem 1rem;
   border-radius: 25px;
+  padding-top: 0;
 }
 
-.main-thing-heading h3 {
-  padding: 0 3rem;
+.main-thing-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid var(--grey);
 }
 
 /*Main styling*/
@@ -1011,7 +1022,7 @@ main .sidebar {
 .card-wrapper {
   background-color: var(--neutralLight);
   background-color: #e5eeff;
-  background-color: #ecf3ff;
+  background-color: #ffffff;
   width: 90%;
   border-radius: 10px;
   height: 62vh;
@@ -1332,6 +1343,7 @@ small,
 }
 
 p {
+  font-family: var(--headingFont);
   max-width: 40em;
 }
 

@@ -34,8 +34,7 @@
         <div class="main-thing">
             <div class="main-thing-heading">
                 <h3 class="font-semibold">My Tasks.</h3>
-                <label id="add-new" for="modal-1" class="btn-semiDark"><i class="far fa-plus-circle"></i> Add
-                    New</label>
+                <label id="add-new" for="modal-1" class="btn-semiDark"><i class="far fa-plus-circle"></i> Add New</label>
                 <!-- MODAL FOR NEW TASK -->
                 <input class="modal-state" id="modal-1" type="checkbox" />
                 <div class="modal">
@@ -68,7 +67,7 @@
             <div class="flex flex-wrap w-full container-wrapper px-2">
                 <!-- Ongoing Tasks -->
                 <div class="w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/3 mb-4">
-                    <p>Ongoing Tasks</p>
+                    <p class="text-center font-bold text-xl uppercase">Ongoing</p>
                     <div class="card-wrapper">
                         <!-- Card here OK -->
                         <% if(posts.length>0){ %>
@@ -128,14 +127,14 @@
                 </div>
                 <!-- Pending Tasks -->
                 <div class="w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/3 mb-4">
-                    <p>Pending Tasks</p>
+                    <p class="text-center font-bold text-xl uppercase">Pending</p>
                     <div class="card-wrapper px-2">
                         <!-- Card here OK -->
                     </div>
                 </div>
                 <!-- Finished Tasks -->
                 <div class="w-full sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/3 mb-4">
-                    <p>Finished Tasks</p>
+                    <p class="text-center font-bold text-xl uppercase">Finished</p>
                     <div class="card-wrapper px-2">
                         <!-- Card here OK -->
                     </div>
