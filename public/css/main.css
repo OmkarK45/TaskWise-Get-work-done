@@ -792,8 +792,7 @@ label {
   top: 0;
   left: 0;
   background-color: var(--neutralLight);
-  background-color: #ffffff;
-  background-color: #477167;
+  background-color: #41695f;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   overflow-x: hidden;
@@ -809,22 +808,24 @@ label {
   color: white;
   border-radius: 5px;
   display: block;
+  opacity: 0.7;
   -webkit-transition: background-color 0.1s ease-in-out;
   transition: background-color 0.1s ease-in-out;
 }
 
 .sidebar a .far {
-  opacity: 0.6;
+  opacity: 0.8;
   padding: 1rem;
 }
 
 .sidebar a:hover {
-  background-color: #3f6259;
+  background-color: #3b5c54;
   color: var(--white);
+  opacity: 1;
 }
 
 .sidebar a:active {
-  background-color: #3f6259;
+  background-color: #395851;
   color: var(--white);
 }
 
@@ -836,7 +837,6 @@ main .sidebar {
   margin-left: 50px;
 }
 
-.fal,
 .icon-text {
   font-family: var(--headingFont);
   text-transform: uppercase;
@@ -1008,7 +1008,7 @@ main .sidebar {
 }
 
 .container-wrapper {
-  padding: 1rem 0;
+  padding: 0.5rem 0;
 }
 
 .container-wrapper p {
@@ -1065,9 +1065,13 @@ main .sidebar {
 }
 
 ::-webkit-scrollbar {
-  width: 0px;
+  width: 5px;
   background: transparent;
   /* make scrollbar transparent */
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--green);
 }
 
 /*CSS FOR MODAL*/
