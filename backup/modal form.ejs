@@ -1,0 +1,17 @@
+<form action="/dashboard/new" method="POST" class="box" id="form">
+    <div class="form-control">
+        <label for="taskname">Task</label>
+        <input type="text" id="title" name="title" placeholder="Task Title">
+    </div>
+    <div class="form-control">
+        <label for="tasksub">Subtitle</label>
+        <input type="text" id="subtitle" name="subtitle" placeholder="Subtitle">
+    </div>
+    <div class="form-control">
+        <label for="taskname">Description</label>
+        <!-- <input type="text" id="taskDesc" name="taskDesc" placeholder="Description"> -->
+        <textarea name="description" id="" cols="30" rows="5"
+            placeholder="You can include brief description of your task"></textarea>
+    </div>
+    <button class="btn-green btn-small" id="submit" type="submit">Create</button>
+</form>

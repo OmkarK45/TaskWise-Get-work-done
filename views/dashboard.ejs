@@ -40,26 +40,27 @@
                 <div class="modal">
                     <label class="modal__bg" for="modal-1"></label>
                     <div class="modal__inner">
-                        <label class="modal__close" for="modal-1"></label>
-                        <h3 class="text-center">Create new task</h3>
                         <!-- Form goes here -->
-                        <form action="/dashboard/new" method="POST" class="box" id="form">
-                            <div class="form-control">
-                                <label for="taskname">Task</label>
-                                <input type="text" id="title" name="title" placeholder="Task Title">
+                        <!-- THREE COLUMN LAYOUT GOES HERE -->
+                        <!-- First row with Add new task, two buttons -->
+                        <div class="flex justify-between items-center modal__header">
+                            <div class="flex">
+                                <h4 class="font-medium"><i class="far fa-plus-square" style="margin-right: 1rem;margin-left: 1rem;"></i> Add a New Task</h4>
                             </div>
-                            <div class="form-control">
-                                <label for="tasksub">Subtitle</label>
-                                <input type="text" id="subtitle" name="subtitle" placeholder="Subtitle">
+                            <div class="flex">
+                                <button class="btn-green btn-xsmall" id="submit" type="submit">Create</button>
+                                <label class="modal__close" for="modal-1"></label>
                             </div>
-                            <div class="form-control">
-                                <label for="taskname">Description</label>
-                                <!-- <input type="text" id="taskDesc" name="taskDesc" placeholder="Description"> -->
-                                <textarea name="description" id="" cols="30" rows="5"
-                                    placeholder="You can include brief description of your task"></textarea>
+                        </div>
+                        <!-- Three coloumns layout -->
+                        <div class="flex">
+                            <div class="w-1/4 h-full flex items-center">
+                            <!-- CAlender here -->
+                            <input type="date">
                             </div>
-                            <button class="btn-green" id="submit" type="submit">Create</button>
-                        </form>
+                            <div class="w-2/4 bg-gray-400 h-12"></div>
+                            <div class="w-1/4 bg-gray-500 h-12"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -121,8 +122,6 @@
                                 </div>
                           <%  }) %>  
                       <%  } %> 
-                        
-                        
                     </div>
                 </div>
                 <!-- Pending Tasks -->
@@ -143,4 +142,5 @@
         </div>
     </section>
 </section>
+
 <%- include('partials/notification') %> <%- include('partials/footer') %>
