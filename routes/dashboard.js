@@ -13,7 +13,6 @@ router.get("/", ensureAuthenticated,async (req, res) => {
       const posts = await Post.find({userID:req.user._id});
       res.render('dashboard',{user:req.user, posts:posts});
       // console.log(`${req.user} has ${posts.length} tasks`)
-      console.log(posts)
   }
   catch(err){
       res.json({err})
