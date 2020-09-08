@@ -1050,6 +1050,7 @@ main .sidebar {
   border-radius: 10px;
   background-color: #63E6BE;
   padding: 0.3rem 0.5rem;
+  margin: 0 0.2rem;
   font-size: 0.8rem;
   font-weight: 700;
   font-family: var(--headingFont);

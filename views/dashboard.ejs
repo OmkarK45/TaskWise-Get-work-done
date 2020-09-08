@@ -129,7 +129,11 @@
               <!-- Span Category-->
               <div class="card-row">
                 <div class="category">
-                  <span class="task-category">Chilling</span>
+                  <% post.tags.forEach(tag=>{ %>
+                    <span class="task-category">
+                      <%= tag %> 
+                    </span>
+                    <%  }) %> 
                 </div>
                 <!-- DROPDOWN MENU FOR CARD :DD -->
                 <div class="dropdown">
