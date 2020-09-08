@@ -1024,12 +1024,14 @@ main .sidebar {
   background-color: #e5eeff;
   background-color: #ffffff;
   width: 90%;
+  margin: 0 auto;
   border-radius: 10px;
   height: 66vh;
   overflow: scroll;
   padding: 1rem;
   -webkit-box-shadow: var(--level-1);
           box-shadow: var(--level-1);
+  border: 1px solid lightgray;
 }
 
 .card {
@@ -1083,8 +1085,9 @@ main .sidebar {
 
 /*CSS FOR MODAL*/
 .modal {
-  opacity: 0;
   opacity: 1;
+  opacity: 0;
+  visibility: hidden;
   position: fixed;
   top: 0;
   right: 0;

@@ -186,6 +186,7 @@ main .sidebar {
 }
 .container-wrapper{
   padding: 0.5rem 0;
+  
   p{
     color: #000;
     // text-align: center;
@@ -201,11 +202,13 @@ main .sidebar {
   background-color: #e5eeff;
   background-color: #ffffff;
   width: 90%;
+  margin: 0 auto;
   border-radius: 10px;
   height: 66vh;
   overflow: scroll;
   padding: 1rem;
   box-shadow: var(--level-1);
+  border: 1px solid rgb(211, 211, 211);
 }
 .card{
   width: 100%;
@@ -249,9 +252,9 @@ main .sidebar {
 }
 /*CSS FOR MODAL*/
 .modal {
-  opacity: 0;
   opacity: 1;
-  // visibility: hidden;
+  opacity: 0;
+  visibility: hidden;
   position: fixed;
   top: 0;
   right: 0;
