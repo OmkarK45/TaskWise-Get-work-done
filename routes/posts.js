@@ -16,11 +16,13 @@ router.post('/',ensureAuthenticated,async (req,res)=>{
         category:req.body.category,
         tags:req.body.tags,
         time:req.body.time,
-        image:req.body.image
+        image:req.body.image,
+        date:req.body.date
     });
     try{
         const savedPost = await post.save()
         res.json({savedPost})
+        console.log(req.body)
     }
    catch(err){
     res.json({message:err})

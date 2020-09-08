@@ -25,6 +25,7 @@ router.get("/", ensureAuthenticated,async (req, res) => {
 router.post('/new',ensureAuthenticated,async (req,res)=>{
   // const obj = JSON.parse(JSON.stringify(req.body));
   // console.log(obj)
+  console.log(req.body)
   const post = new Post({
       title:req.body.title,
       description:req.body.description,
@@ -33,7 +34,8 @@ router.post('/new',ensureAuthenticated,async (req,res)=>{
       category:req.body.category,
       tags:req.body.tags,
       time:req.body.time,
-      image:req.body.image
+      image:req.body.image,
+      date:req.body.date
   });
   try{
       const savedPost = await post.save()

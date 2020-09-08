@@ -1099,6 +1099,10 @@ main .sidebar {
   border-radius: 0;
 }
 
+.calender_wrapper {
+  margin-top: 1rem;
+}
+
 .modal__bg {
   position: absolute;
   top: 0;
@@ -1150,20 +1154,23 @@ main .sidebar {
 .modal__close:before {
   content: 'CANCEL';
   position: absolute;
-  top: .8rem;
+  top: .79rem;
   border-radius: 10px;
   right: 9rem;
   display: block;
-  padding: 1rem;
-  -webkit-transition: 0.3s ease-in-out transform;
-  transition: 0.3s ease-in-out transform;
+  padding: 0.6rem;
+}
+
+.btn-xsmall {
+  position: absolute;
+  top: 0.8rem;
+  right: 2rem;
+  width: auto;
 }
 
 .modal__close:hover:after,
 .modal__close:hover:before {
   background: #eee;
-  -webkit-transform: translateY(-3px);
-          transform: translateY(-3px);
 }
 
 .modal__header {
@@ -1257,7 +1264,6 @@ main .sidebar {
   font-family: var(--headingFont);
   font-weight: 600;
   font-size: 1rem;
-  position: relative;
 }
 
 /*3. Fixed class for flex and grid*/
