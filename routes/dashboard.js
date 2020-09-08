@@ -24,7 +24,14 @@ router.get("/", ensureAuthenticated,async (req, res) => {
 router.post('/new',ensureAuthenticated,async (req,res)=>{
   // const obj = JSON.parse(JSON.stringify(req.body));
   // console.log(obj)
-  console.log(req.body)
+  // console.log(req.body.tags.split(','));
+  // console.log(typeof req.body.tags);
+  var tags = []
+  const formTagData = req.body.tags.split(',')
+  formTagData.forEach(element=>{
+    tags.push(element)
+  })
+  console.log(tags);
   const post = new Post({
       title:req.body.title,
       description:req.body.description,
@@ -34,7 +41,8 @@ router.post('/new',ensureAuthenticated,async (req,res)=>{
       tags:req.body.tags,
       time:req.body.time,
       image:req.body.image,
-      date:req.body.date
+      date:req.body.date,
+      tags:tags
   });
   try{
       const savedPost = await post.save()

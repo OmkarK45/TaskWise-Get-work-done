@@ -16,8 +16,7 @@ const PostSchema = mongoose.Schema({
         // due date maybe ?
     },
     tags:{
-        // tags will go here
-        type:[String]
+         type : Array , "default" : [] 
     },
     description:{
         type:String,
