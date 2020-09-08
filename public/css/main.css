@@ -1095,8 +1095,8 @@ main .sidebar {
   z-index: 99;
 }
 
-.calender {
-  z-index: 100;
+.box-no-border-radius {
+  border-radius: 0;
 }
 
 .modal__bg {

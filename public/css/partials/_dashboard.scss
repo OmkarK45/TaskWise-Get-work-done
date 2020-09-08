@@ -264,8 +264,11 @@ main .sidebar {
   // backdrop-filter: blur(5px);
   z-index: 99;
 }
+.box-no-border-radius{
+  border-radius: 0;
+}
 .calender{
-  z-index: 100;
+  
 }
 .modal__bg {
   position: absolute;
