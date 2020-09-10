@@ -89,9 +89,7 @@
                 </button>
                 <label class="modal__close" for="modal-1" id="modal_close"></label>
               </div>
-
             </form>
-
           </div>
         </div>
       </div>
@@ -181,28 +179,10 @@
 </section>
 
 <script>
-  const modal = document.getElementById('modal')
-  const editBtn = document.getElementById("edit-task")
-  
-  var modalOpen = false
+  // Add New Task Button
 
-  editBtn.addEventListener('click',()=>{
-    console.log('Btn pressed')
-    if(!modalOpen){
-      modalOpen=true
-      modal.style.opacity = 1
-      modal.style.visibility = 'visible'
-    }
-  })
-  
-  document.addEventListener('click',function(e){
-    if(e.target && e.target.id== 'modal_close'){
-         modal.style.opacity = 0
-         modal.style.visibility = 'hidden'
-         console.log('modal closed');
-         modalOpen=false
-     }
- });
+  // Edit Button
+
 </script>
 
 
